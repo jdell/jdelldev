@@ -1,0 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace asr.lib.vo.importacion
+{
+    public interface IOldasr<T>
+    {
+        T ToNewasr();
+    }
+}

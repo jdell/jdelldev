@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ambis1.model", "ambis1.model\ambis1.model.csproj", "{F8097947-F652-4D85-85B0-E831726C9587}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ambis1.gui.pc", "ambis1.gui\ambis1.gui.pc.csproj", "{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dll", "dll", "{1C470E1B-1DE2-4105-B12A-9895CD91E2A3}"
+	ProjectSection(SolutionItems) = preProject
+		_dll\Calendar.DayView.dll = _dll\Calendar.DayView.dll
+		_dll\dynamoReport.dll = _dll\dynamoReport.dll
+		_dll\framework.crypto.dll = _dll\framework.crypto.dll
+		_dll\framework.events.dll = _dll\framework.events.dll
+		_dll\framework.exceptions.dll = _dll\framework.exceptions.dll
+		_dll\framework.forms.controls.dll = _dll\framework.forms.controls.dll
+		_dll\framework.forms.dll = _dll\framework.forms.dll
+		_dll\framework.util.dll = _dll\framework.util.dll
+		_dll\libgc_util.dll = _dll\libgc_util.dll
+		_dll\MonthCalendar.dll = _dll\MonthCalendar.dll
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ambis1.gui.web", "ambis1.gui.web\", "{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		ProjectReferences = "{F8097947-F652-4D85-85B0-E831726C9587}|ambis1.model.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/ambis1.gui.web"
+		Debug.AspNetCompiler.PhysicalPath = "ambis1.gui.web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ambis1.gui.web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ambis1.gui.web"
+		Release.AspNetCompiler.PhysicalPath = "ambis1.gui.web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ambis1.gui.web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1135"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8097947-F652-4D85-85B0-E831726C9587}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{F8097947-F652-4D85-85B0-E831726C9587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8097947-F652-4D85-85B0-E831726C9587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8097947-F652-4D85-85B0-E831726C9587}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F8097947-F652-4D85-85B0-E831726C9587}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F8097947-F652-4D85-85B0-E831726C9587}.Release|.NET.ActiveCfg = Release|Any CPU
+		{F8097947-F652-4D85-85B0-E831726C9587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8097947-F652-4D85-85B0-E831726C9587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8097947-F652-4D85-85B0-E831726C9587}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F8097947-F652-4D85-85B0-E831726C9587}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Release|.NET.ActiveCfg = Release|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Debug|.NET.ActiveCfg = Debug|.NET
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Debug|.NET.Build.0 = Debug|.NET
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Release|.NET.ActiveCfg = Debug|.NET
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Release|.NET.Build.0 = Debug|.NET
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{B29CDA14-2DAD-4DC2-8CA7-11438D8EFBF4}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

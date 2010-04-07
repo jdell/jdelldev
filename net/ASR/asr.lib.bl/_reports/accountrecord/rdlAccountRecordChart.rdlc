@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>01c9de7a-ad84-41bc-a27f-3f270a9e1482</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>8.5in</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="Client">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="dateFrom">
+      <DataType>DateTime</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_1</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="dateTo">
+      <DataType>DateTime</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="All">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_3</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="PathLogo">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_4</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>11in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Line Name="line2">
+        <Top>1.17708in</Top>
+        <Width>-8.875in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <Left>8.875in</Left>
+        <Height>0in</Height>
+      </Line>
+      <Textbox Name="textbox13">
+        <Top>0.92708in</Top>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.5in</Left>
+        <Height>0.25in</Height>
+        <Value>= Parameters!All.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <Top>0.92708in</Top>
+        <Width>2.25in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.25in</Left>
+        <Height>0.25in</Height>
+        <Value>=string.format("From: {0:d} To: {1:d}", Parameters!dateFrom.Value,Parameters!dateTo.Value)</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <rd:DefaultName>textbox5</rd:DefaultName>
+        <Top>0.92708in</Top>
+        <Width>5.125in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Parameters!Client.Value</Value>
+      </Textbox>
+      <Image Name="image1">
+        <Sizing>AutoSize</Sizing>
+        <Width>3.125in</Width>
+        <MIMEType>image/png</MIMEType>
+        <Source>External</Source>
+        <Style />
+        <ZIndex>1</ZIndex>
+        <Height>0.90625in</Height>
+        <Value>=Parameters!PathLogo.Value</Value>
+      </Image>
+      <Textbox Name="textbox6">
+        <rd:DefaultName>textbox6</rd:DefaultName>
+        <Style>
+          <FontSize>16pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Right</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>2.625in</Left>
+        <Height>0.875in</Height>
+        <Value>Account Records. Charts</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>1.25in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>0.5in</BottomMargin>
+  <rd:ReportID>fcae5bfb-7bc4-43b5-8331-8b6d922b3fc5</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <PageWidth>11in</PageWidth>
+  <DataSets>
+    <DataSet Name="asr_lib_vo_AccountRecord">
+      <Fields>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="Client">
+          <DataField>Client</DataField>
+          <rd:TypeName>asr.lib.vo.Client</rd:TypeName>
+        </Field>
+        <Field Name="Date">
+          <DataField>Date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Incoming">
+          <DataField>Incoming</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Reference">
+          <DataField>Reference</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Activity">
+          <DataField>Activity</DataField>
+          <rd:TypeName>asr.lib.vo.Activity</rd:TypeName>
+        </Field>
+        <Field Name="Expense">
+          <DataField>Expense</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="Income">
+          <DataField>Income</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="Percentage">
+          <DataField>Percentage</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="Result">
+          <DataField>Result</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>asr.lib.vo</rd:DataSetName>
+        <rd:TableName>AccountRecord</rd:TableName>
+        <rd:ObjectDataSourceType>asr.lib.vo.AccountRecord, asr.lib.vo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>8.875in</Width>
+  <Body>
+    <ReportItems>
+      <Chart Name="chart3">
+        <Legend>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+          <Position>RightCenter</Position>
+        </Legend>
+        <CategoryAxis>
+          <Axis>
+            <Title />
+            <Style />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+          </Axis>
+        </CategoryAxis>
+        <ZIndex>2</ZIndex>
+        <DataSetName>asr_lib_vo_AccountRecord</DataSetName>
+        <PlotArea>
+          <Style>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+        </PlotArea>
+        <ThreeDProperties>
+          <Rotation>30</Rotation>
+          <Inclination>30</Inclination>
+          <Shading>Simple</Shading>
+          <WallThickness>50</WallThickness>
+        </ThreeDProperties>
+        <PointWidth>0</PointWidth>
+        <SeriesGroupings>
+          <SeriesGrouping>
+            <StaticSeries>
+              <StaticMember>
+                <Label>Percentage</Label>
+              </StaticMember>
+            </StaticSeries>
+          </SeriesGrouping>
+        </SeriesGroupings>
+        <Top>4in</Top>
+        <Subtype>Plain</Subtype>
+        <ValueAxis>
+          <Axis>
+            <Title />
+            <Style />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+            <Scalar>true</Scalar>
+          </Axis>
+        </ValueAxis>
+        <Type>Column</Type>
+        <CategoryGroupings>
+          <CategoryGrouping>
+            <DynamicCategories>
+              <Grouping Name="chart3_CategoryGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Date.Value.Month</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Label>=string.format("{0} {1:00}",MonthName(Fields!Date.Value.Month), Fields!Date.Value.Year)</Label>
+            </DynamicCategories>
+          </CategoryGrouping>
+        </CategoryGroupings>
+        <Palette>Default</Palette>
+        <ChartData>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=iif(Sum(Fields!Income.Value)&lt;&gt;0,100*(Sum(Fields!Income.Value)-Sum(Fields!Expense.Value)) / Sum(Fields!Income.Value), 0)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel>
+                  <Style>
+                    <Color>=iif(Sum(Fields!Income.Value)&lt;&gt;0,iif(100*(Sum(Fields!Income.Value)-Sum(Fields!Expense.Value)) / Sum(Fields!Income.Value)&lt;-1,"Red", "Black"), "Red")</Color>
+                    <FontWeight>700</FontWeight>
+                    <Format>P</Format>
+                  </Style>
+                  <Value>=iif(Sum(Fields!Income.Value)&lt;&gt;0,(Sum(Fields!Income.Value)-Sum(Fields!Expense.Value)) / Sum(Fields!Income.Value), 0)</Value>
+                  <Position>Top</Position>
+                  <Visible>true</Visible>
+                </DataLabel>
+                <Marker>
+                  <Size>6pt</Size>
+                </Marker>
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+        </ChartData>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+        </Style>
+        <Title>
+          <Caption>Percentages</Caption>
+        </Title>
+      </Chart>
+      <Chart Name="chart2">
+        <Legend>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+          <Position>RightCenter</Position>
+        </Legend>
+        <CategoryAxis>
+          <Axis>
+            <Title />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+          </Axis>
+        </CategoryAxis>
+        <ZIndex>1</ZIndex>
+        <DataSetName>asr_lib_vo_AccountRecord</DataSetName>
+        <PlotArea>
+          <Style>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+        </PlotArea>
+        <ThreeDProperties>
+          <Rotation>30</Rotation>
+          <Inclination>30</Inclination>
+          <Shading>Simple</Shading>
+          <WallThickness>50</WallThickness>
+        </ThreeDProperties>
+        <PointWidth>0</PointWidth>
+        <SeriesGroupings>
+          <SeriesGrouping>
+            <StaticSeries>
+              <StaticMember>
+                <Label>Difference</Label>
+              </StaticMember>
+            </StaticSeries>
+          </SeriesGrouping>
+        </SeriesGroupings>
+        <Top>2in</Top>
+        <Subtype>Plain</Subtype>
+        <ValueAxis>
+          <Axis>
+            <Title />
+            <Style />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+            <Scalar>true</Scalar>
+          </Axis>
+        </ValueAxis>
+        <Type>Line</Type>
+        <CategoryGroupings>
+          <CategoryGrouping>
+            <DynamicCategories>
+              <Grouping Name="chart2_CategoryGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Date.Value.Month</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Label>=string.format("{0} {1:00}",MonthName(Fields!Date.Value.Month), Fields!Date.Value.Year)</Label>
+            </DynamicCategories>
+          </CategoryGrouping>
+        </CategoryGroupings>
+        <Palette>Default</Palette>
+        <ChartData>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!Result.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel>
+                  <Style>
+                    <Format>N</Format>
+                  </Style>
+                  <Value>=Sum(Fields!Result.Value)</Value>
+                  <Visible>true</Visible>
+                </DataLabel>
+                <Marker>
+                  <Size>6pt</Size>
+                </Marker>
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+        </ChartData>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+        </Style>
+        <Title>
+          <Caption>Profits/Losses</Caption>
+        </Title>
+        <Height>2in</Height>
+      </Chart>
+      <Chart Name="chart1">
+        <Legend>
+          <Visible>true</Visible>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+          <Position>TopCenter</Position>
+          <Layout>Row</Layout>
+        </Legend>
+        <CategoryAxis>
+          <Axis>
+            <Title />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+          </Axis>
+        </CategoryAxis>
+        <DataSetName>asr_lib_vo_AccountRecord</DataSetName>
+        <PlotArea>
+          <Style>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+        </PlotArea>
+        <ThreeDProperties>
+          <Rotation>30</Rotation>
+          <Inclination>30</Inclination>
+          <Shading>Simple</Shading>
+          <WallThickness>50</WallThickness>
+        </ThreeDProperties>
+        <PointWidth>0</PointWidth>
+        <SeriesGroupings>
+          <SeriesGrouping>
+            <StaticSeries>
+              <StaticMember>
+                <Label>Incomes</Label>
+              </StaticMember>
+              <StaticMember>
+                <Label>Expenses</Label>
+              </StaticMember>
+            </StaticSeries>
+          </SeriesGrouping>
+        </SeriesGroupings>
+        <Subtype>Plain</Subtype>
+        <ValueAxis>
+          <Axis>
+            <Title />
+            <Style />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+            <Scalar>true</Scalar>
+          </Axis>
+        </ValueAxis>
+        <Type>Column</Type>
+        <CategoryGroupings>
+          <CategoryGrouping>
+            <DynamicCategories>
+              <Grouping Name="chart1_CategoryGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Date.Value.Month</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Label>=string.format("{0} {1:00}",MonthName(Fields!Date.Value.Month), Fields!Date.Value.Year)</Label>
+            </DynamicCategories>
+          </CategoryGrouping>
+        </CategoryGroupings>
+        <Palette>Default</Palette>
+        <ChartData>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!Income.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel>
+                  <Style>
+                    <Format>c</Format>
+                  </Style>
+                  <Value>=Sum(Fields!Income.Value)</Value>
+                  <Visible>true</Visible>
+                </DataLabel>
+                <Marker>
+                  <Size>6pt</Size>
+                </Marker>
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!Expense.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel>
+                  <Style>
+                    <Format>c</Format>
+                  </Style>
+                  <Value>=Sum(Fields!Expense.Value)</Value>
+                  <Visible>true</Visible>
+                </DataLabel>
+                <Marker>
+                  <Size>6pt</Size>
+                </Marker>
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+        </ChartData>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+        </Style>
+        <Title />
+        <Height>2in</Height>
+      </Chart>
+    </ReportItems>
+    <Height>6in</Height>
+  </Body>
+  <Language>en</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox15">
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.375in</Left>
+        <Value>=string.format("Page {0} of {1}",Globals!PageNumber,Globals!TotalPages)</Value>
+      </Textbox>
+      <Line Name="line1">
+        <Width>-8.875in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Left>8.875in</Left>
+        <Height>0in</Height>
+      </Line>
+      <Textbox Name="textbox14">
+        <rd:DefaultName>textbox14</rd:DefaultName>
+        <Width>1.5in</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Value>=Globals!ExecutionTime</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.25in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>0.5in</TopMargin>
+  <PageHeight>8.5in</PageHeight>
+</Report>

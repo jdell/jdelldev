@@ -1,0 +1,374 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26CD0944-60E2-4878-A179-2B3E5F558ADD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>asr.lib.bl</RootNamespace>
+    <AssemblyName>asr.lib.bl</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'lts|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\lts\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Client|AnyCPU' ">
+    <OutputPath>bin\Client\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="framework.exceptions, Version=0.0.8.0, Culture=neutral, PublicKeyToken=d0dfd29390566188, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.util, Version=0.0.8.0, Culture=neutral, PublicKeyToken=43ecb7b0d9a31afb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.util.dll</HintPath>
+    </Reference>
+    <Reference Include="libgc_util, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\libgc_util.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accountrecord\doGenerateActivitiesByClient.cs" />
+    <Compile Include="accountrecord\doGenerateActivities.cs" />
+    <Compile Include="client\doGetAllAccountRecord.cs" />
+    <Compile Include="client\doGetAllCreditRepair.cs" />
+    <Compile Include="client\doAdd.cs" />
+    <Compile Include="client\doDelete.cs" />
+    <Compile Include="client\doGet.cs" />
+    <Compile Include="client\doGetAll.cs" />
+    <Compile Include="client\doUpdate.cs" />
+    <Compile Include="accountrecord\doAdd.cs" />
+    <Compile Include="accountrecord\doDelete.cs" />
+    <Compile Include="accountrecord\doGet.cs" />
+    <Compile Include="accountrecord\doGetAll.cs" />
+    <Compile Include="accountrecord\doUpdate.cs" />
+    <Compile Include="activity\doAdd.cs" />
+    <Compile Include="activity\doDelete.cs" />
+    <Compile Include="activity\doGet.cs" />
+    <Compile Include="activity\doGetAll.cs" />
+    <Compile Include="activity\doUpdate.cs" />
+    <Compile Include="client\web\doDownload.cs" />
+    <Compile Include="client\web\doUpload.cs" />
+    <Compile Include="client\web\doResetAccess.cs" />
+    <Compile Include="client\web\doRemoveAccess.cs" />
+    <Compile Include="client\web\doGenerateAccess.cs" />
+    <Compile Include="employment\doGetAll.cs" />
+    <Compile Include="employment\doGetAllByCustomer.cs" />
+    <Compile Include="payment\doAdd.cs" />
+    <Compile Include="payment\doDelete.cs" />
+    <Compile Include="payment\doGet.cs" />
+    <Compile Include="payment\doGetAll.cs" />
+    <Compile Include="payment\doGetAllByInvoice.cs" />
+    <Compile Include="payment\doUpdate.cs" />
+    <Compile Include="invoice\doGetAllExpenses.cs" />
+    <Compile Include="serie\doAdd.cs" />
+    <Compile Include="serie\doDelete.cs" />
+    <Compile Include="serie\doGet.cs" />
+    <Compile Include="serie\doGetAll.cs" />
+    <Compile Include="serie\doUpdate.cs" />
+    <Compile Include="payable\doAdd.cs" />
+    <Compile Include="payable\doDelete.cs" />
+    <Compile Include="payable\doGet.cs" />
+    <Compile Include="payable\doGetAll.cs" />
+    <Compile Include="activity\doGetAllIncomes.cs" />
+    <Compile Include="payable\doUpdate.cs" />
+    <Compile Include="invoicedetail\doGetAllByInvoice.cs" />
+    <Compile Include="invoice\doAdd.cs" />
+    <Compile Include="invoice\doDelete.cs" />
+    <Compile Include="invoice\doGet.cs" />
+    <Compile Include="invoice\doGetAllIncomes.cs" />
+    <Compile Include="invoice\doUpdate.cs" />
+    <Compile Include="service\doGetAllExpenses.cs" />
+    <Compile Include="skillscore\doGetAll.cs" />
+    <Compile Include="skill\doAdd.cs" />
+    <Compile Include="skill\doDelete.cs" />
+    <Compile Include="skill\doGet.cs" />
+    <Compile Include="skill\doGetAll.cs" />
+    <Compile Include="skill\doUpdate.cs" />
+    <Compile Include="invoicedetail\doGetAll.cs" />
+    <Compile Include="message\doAdd.cs" />
+    <Compile Include="message\doDelete.cs" />
+    <Compile Include="message\doGet.cs" />
+    <Compile Include="message\doGetAll.cs" />
+    <Compile Include="message\doUpdate.cs" />
+    <Compile Include="staff\doAdd.cs" />
+    <Compile Include="staff\doDelete.cs" />
+    <Compile Include="staff\doGet.cs" />
+    <Compile Include="staff\doGetAll.cs" />
+    <Compile Include="staff\doUpdate.cs" />
+    <Compile Include="service\doAdd.cs" />
+    <Compile Include="service\doDelete.cs" />
+    <Compile Include="service\doGet.cs" />
+    <Compile Include="service\doGetAllIncomes.cs" />
+    <Compile Include="service\doUpdate.cs" />
+    <Compile Include="task\doAdd.cs" />
+    <Compile Include="task\doDelete.cs" />
+    <Compile Include="task\doGet.cs" />
+    <Compile Include="task\doGetAll.cs" />
+    <Compile Include="task\doUpdate.cs" />
+    <Compile Include="employment\doAdd.cs" />
+    <Compile Include="employment\doDelete.cs" />
+    <Compile Include="employment\doGet.cs" />
+    <Compile Include="employment\doGetAllByClient.cs" />
+    <Compile Include="employment\doUpdate.cs" />
+    <Compile Include="customer\doAdd.cs" />
+    <Compile Include="customer\doDelete.cs" />
+    <Compile Include="customer\doGet.cs" />
+    <Compile Include="customer\doGetAll.cs" />
+    <Compile Include="customer\doUpdate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_common\cache.cs" />
+    <Compile Include="_common\constantes\mensaje.cs" />
+    <Compile Include="_common\custom\LineaVacia.cs" />
+    <Compile Include="_common\secciones\AdministracionSection.cs" />
+    <Compile Include="_common\secciones\CompanyInfoSection.cs" />
+    <Compile Include="_common\secciones\MantenimientoSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_events\gesClinicaEventArgs.cs" />
+    <Compile Include="_events\ProgressEventArgs.cs" />
+    <Compile Include="_exceptions\common\AccessNotAllowedException.cs" />
+    <Compile Include="_exceptions\common\ConfigFileNotFoundException.cs" />
+    <Compile Include="_exceptions\common\IncorrectFormatConfigFileException.cs" />
+    <Compile Include="_exceptions\common\InitializeCacheException.cs" />
+    <Compile Include="_exceptions\common\NullReferenceException.cs" />
+    <Compile Include="_exceptions\common\OutOfServiceException.cs" />
+    <Compile Include="_exceptions\client\MissingSSNException.cs" />
+    <Compile Include="_exceptions\accountrecord\MissingClientException.cs" />
+    <Compile Include="_exceptions\activity\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\payment\MissingInvoiceException.cs" />
+    <Compile Include="_exceptions\invoice\InvoicePaidException.cs" />
+    <Compile Include="_exceptions\serie\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\payable\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\invoice\MissingClientException.cs" />
+    <Compile Include="_exceptions\employment\MissingCustomerException.cs" />
+    <Compile Include="_exceptions\skill\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\message\MissingTextException.cs" />
+    <Compile Include="_exceptions\staff\MissingStaffException.cs" />
+    <Compile Include="_exceptions\service\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\task\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\employment\MissingClientException.cs" />
+    <Compile Include="_exceptions\customer\MissingNameException.cs" />
+    <Compile Include="_exceptions\gesClinicaException.cs" />
+    <Compile Include="_exceptions\validatingException.cs" />
+    <Compile Include="_reports\accountrecord\rptAccountRecordChart.cs" />
+    <Compile Include="_reports\accountrecord\rptAccountRecord.cs" />
+    <Compile Include="_reports\invoicedetail\rptInvoiceDetailChart.cs" />
+    <Compile Include="_reports\invoicedetail\rptInvoiceDetail.cs" />
+    <Compile Include="_reports\Informe.cs" />
+    <Compile Include="_reports\invoice\rptInvoiceTax.cs" />
+    <Compile Include="_reports\invoice\rptInvoice.cs" />
+    <Compile Include="_template\actionBL.cs" />
+    <Compile Include="_template\administrativoActionBL.cs" />
+    <Compile Include="_template\gerenteActionBL.cs" />
+    <Compile Include="_template\generalActionBL.cs" />
+    <Compile Include="_template\terapeutaActionBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\asr.lib.common\asr.lib.common.csproj">
+      <Project>{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}</Project>
+      <Name>asr.lib.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\asr.lib.vo\asr.lib.vo.csproj">
+      <Project>{B95F238C-8B83-41F0-9D42-87B4E063215F}</Project>
+      <Name>asr.lib.vo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\asr.lib.dao\asr.lib.dao.csproj">
+      <Project>{4863D8E3-041C-47E3-BE4A-E9475411F492}</Project>
+      <Name>asr.lib.dao</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\asr.lib.vo.AccountRecord.datasource" />
+    <None Include="Properties\DataSources\asr.lib.vo.Invoice.datasource" />
+    <None Include="Properties\DataSources\asr.lib.vo.InvoiceDetail.datasource" />
+    <None Include="Properties\DataSources\asr.lib.vo.Payment.datasource" />
+    <None Include="_sql\base.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_38.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_37.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_36.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_35.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_34.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_33.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_32.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_31.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_30.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_29.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_28.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_27.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_26.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_25.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_24.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_23.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_22.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_21.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_20.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_19.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_18.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_17.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_16.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_15.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_14.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_13.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_12.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_11.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_10.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_9.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_8.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_7.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_6.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_5.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_4.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_3.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_2.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_1.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\_upgrade_example.sql">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="_reports\accountrecord\rdlAccountRecordChart.rdlc" />
+    <EmbeddedResource Include="_reports\accountrecord\rdlAccountRecord.rdlc" />
+    <EmbeddedResource Include="_reports\invoicedetail\rdlInvoiceDetailChart.rdlc" />
+    <EmbeddedResource Include="_reports\invoicedetail\rdlInvoiceDetail.rdlc" />
+    <EmbeddedResource Include="_reports\invoice\rdlInvoiceTax.rdlc" />
+    <EmbeddedResource Include="_reports\invoice\rdlInvoice.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_importacion\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

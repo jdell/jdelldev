@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DAD41793-8B73-4B32-89E1-7BF8A7BF2EC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ambis1.gui.pc</RootNamespace>
+    <AssemblyName>DoublePlayTC</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>double 32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Calendar.DayView, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\Calendar.DayView.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.events, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.events.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.exceptions, Version=0.0.8.0, Culture=neutral, PublicKeyToken=d0dfd29390566188, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.forms, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.forms.controls, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.forms.controls.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.util, Version=0.0.8.0, Culture=neutral, PublicKeyToken=43ecb7b0d9a31afb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.util.dll</HintPath>
+    </Reference>
+    <Reference Include="MonthCalendar, Version=1.0.3126.25214, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\MonthCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm\cage\frmCageEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cage\frmCageEdit.Designer.cs">
+      <DependentUpon>frmCageEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\cage\frmCageQry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cage\frmCageQry.Designer.cs">
+      <DependentUpon>frmCageQry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\holiday\frmHoliday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\holiday\frmHoliday.Designer.cs">
+      <DependentUpon>frmHoliday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\membership\frmMemberShipEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\membership\frmMemberShipEdit.Designer.cs">
+      <DependentUpon>frmMemberShipEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\membership\frmMemberShipQry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\membership\frmMemberShipQry.Designer.cs">
+      <DependentUpon>frmMemberShipQry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\player\frmPlayerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\player\frmPlayerEdit.Designer.cs">
+      <DependentUpon>frmPlayerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\player\frmPlayerQry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\player\frmPlayerQry.Designer.cs">
+      <DependentUpon>frmPlayerQry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\reservation\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\reservation\frmEdit.Designer.cs">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\reservation\frmReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\reservation\frmReservation.Designer.cs">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\team\frmTeamQry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\team\frmTeamQry.Designer.cs">
+      <DependentUpon>frmTeamQry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\typeofmembership\frmTypeOfMemberShipEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\typeofmembership\frmTypeOfMemberShipEdit.Designer.cs">
+      <DependentUpon>frmTypeOfMemberShipEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\typeofmembership\frmTypeOfMemberShipQry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\typeofmembership\frmTypeOfMemberShipQry.Designer.cs">
+      <DependentUpon>frmTypeOfMemberShipQry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\_alert\frmAlertQry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_alert\frmAlertQry.Designer.cs">
+      <DependentUpon>frmAlertQry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\_main\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_main\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="_common\cache.cs" />
+    <Compile Include="_common\constants\format.cs" />
+    <Compile Include="_common\constants\messages.cs" />
+    <Compile Include="_common\secciones\FontAgendaSection.cs" />
+    <Compile Include="_template\controls\Agenda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_template\controls\MemberView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_template\controls\MemberView.Designer.cs">
+      <DependentUpon>MemberView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_template\controls\MonthCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_template\controls\PictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_template\controls\RadioListItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_template\frm\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_template\frm\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_template\_common\extend.cs" />
+    <Compile Include="_template\_common\messages.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm\cage\frmCageEdit.resx">
+      <DependentUpon>frmCageEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cage\frmCageQry.resx">
+      <DependentUpon>frmCageQry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\holiday\frmHoliday.resx">
+      <DependentUpon>frmHoliday.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\membership\frmMemberShipEdit.resx">
+      <DependentUpon>frmMemberShipEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\membership\frmMemberShipQry.resx">
+      <DependentUpon>frmMemberShipQry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\player\frmPlayerEdit.resx">
+      <DependentUpon>frmPlayerEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\player\frmPlayerQry.resx">
+      <DependentUpon>frmPlayerQry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\reservation\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\reservation\frmReservation.resx">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\team\frmTeamQry.resx">
+      <DependentUpon>frmTeamQry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\typeofmembership\frmTypeOfMemberShipEdit.resx">
+      <DependentUpon>frmTypeOfMemberShipEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\typeofmembership\frmTypeOfMemberShipQry.resx">
+      <DependentUpon>frmTypeOfMemberShipQry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_alert\frmAlertQry.resx">
+      <DependentUpon>frmAlertQry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_main\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\controls\Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\controls\MemberView.resx">
+      <DependentUpon>MemberView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\controls\MonthCalendar.resx">
+      <DependentUpon>MonthCalendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\controls\PictureBox.resx">
+      <DependentUpon>PictureBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\frm\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\frm\EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ambis1.model\ambis1.model.csproj">
+      <Project>{F8097947-F652-4D85-85B0-E831726C9587}</Project>
+      <Name>ambis1.model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="double 32x32.ico" />
+    <None Include="_template\_images\Add.png" />
+    <None Include="Resources\Sync.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\calendar-icon32x32.png" />
+    <None Include="Resources\key-icon.png" />
+    <None Include="Resources\baseball_icon_100px.png" />
+    <None Include="Resources\Application.png" />
+    <None Include="Resources\Application_cascade.png" />
+    <None Include="Resources\Application_tile_horizontal.png" />
+    <None Include="Resources\Application_tile_vertical.png" />
+    <Content Include="_template\_images\double 32x32.ico" />
+    <Content Include="_template\_images\double.ico" />
+    <Content Include="_template\_images\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_template\_images\logo_white.jpg" />
+    <None Include="_template\_images\No.png" />
+    <None Include="_template\_images\Yes.png" />
+    <None Include="_template\_images\Remove.png" />
+    <None Include="_template\_images\Modify.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
