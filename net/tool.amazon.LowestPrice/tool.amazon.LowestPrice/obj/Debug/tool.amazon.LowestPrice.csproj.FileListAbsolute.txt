@@ -1,0 +1,9 @@
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tool.amazon.LowestPrice\tool.amazon.LowestPrice\obj\Debug\ResolveAssemblyReference.cache
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tool.amazon.LowestPrice\tool.amazon.LowestPrice\obj\Debug\tool.amazon.LowestPrice.frmMain.resources
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tool.amazon.LowestPrice\tool.amazon.LowestPrice\obj\Debug\tool.amazon.LowestPrice.Properties.Resources.resources
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tool.amazon.LowestPrice\tool.amazon.LowestPrice\obj\Debug\tool.amazon.LowestPrice.csproj.GenerateResource.Cache
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tool.amazon.LowestPrice\tool.amazon.LowestPrice\bin\Debug\tool.amazon.LowestPrice.exe.config
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tool.amazon.LowestPrice\tool.amazon.LowestPrice\bin\Debug\tool.amazon.LowestPrice.exe
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tool.amazon.LowestPrice\tool.amazon.LowestPrice\bin\Debug\tool.amazon.LowestPrice.pdb
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tool.amazon.LowestPrice\tool.amazon.LowestPrice\obj\Debug\tool.amazon.LowestPrice.exe
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tool.amazon.LowestPrice\tool.amazon.LowestPrice\obj\Debug\tool.amazon.LowestPrice.pdb
