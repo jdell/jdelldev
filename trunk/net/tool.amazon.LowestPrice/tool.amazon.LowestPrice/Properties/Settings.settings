@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="tool.amazon.LowestPrice.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AWSAccessKeyId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AKIAJUKEMLYOUTKWIHGA</Value>
+    </Setting>
+    <Setting Name="MerchantId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">A2I5DA0K14Z5W0</Value>
+    </Setting>
+    <Setting Name="Operation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ItemSearch</Value>
+    </Setting>
+    <Setting Name="ResponseGroup" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ItemAttributes,Offers</Value>
+    </Setting>
+    <Setting Name="SearchIndex" Type="System.String" Scope="User">
+      <Value Profile="(Default)">All</Value>
+    </Setting>
+    <Setting Name="Service" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AWSECommerceService</Value>
+    </Setting>
+    <Setting Name="Sort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">salesrank</Value>
+    </Setting>
+    <Setting Name="Version" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2009-09-09</Value>
+    </Setting>
+    <Setting Name="URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://webservices.amazon.com/onca/xml</Value>
+    </Setting>
+    <Setting Name="SecretKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HuzjF5cjwyW4B8wnUAqh1y86AvIdaqpPFugZG8Lp</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
