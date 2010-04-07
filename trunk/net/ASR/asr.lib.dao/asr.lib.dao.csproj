@@ -1,0 +1,252 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4863D8E3-041C-47E3-BE4A-E9475411F492}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>asr.lib.dao</RootNamespace>
+    <AssemblyName>asr.lib.dao</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'lts|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\lts\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Client|AnyCPU' ">
+    <OutputPath>bin\Client\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="framework.crypto, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.exceptions, Version=0.0.8.0, Culture=neutral, PublicKeyToken=d0dfd29390566188, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.util, Version=0.0.8.0, Culture=neutral, PublicKeyToken=43ecb7b0d9a31afb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accountrecord\action\doGetByExternalId.cs" />
+    <Compile Include="accountrecord\action\doGenerateActivitiesByClient.cs" />
+    <Compile Include="accountrecord\action\doGenerateActivities.cs" />
+    <Compile Include="activity\action\doGetByDescriptionAndClient.cs" />
+    <Compile Include="activity\action\doGetByExternalId.cs" />
+    <Compile Include="activity\action\doGetAllIncomes.cs" />
+    <Compile Include="client\action\doUpdateWebAccess.cs" />
+    <Compile Include="client\action\doGetAllAccountRecord.cs" />
+    <Compile Include="client\action\doGetAllCreditRepair.cs" />
+    <Compile Include="client\action\doAdd.cs" />
+    <Compile Include="client\action\doDelete.cs" />
+    <Compile Include="client\action\doGet.cs" />
+    <Compile Include="client\action\doGetAll.cs" />
+    <Compile Include="client\action\doUpdate.cs" />
+    <Compile Include="client\dao\clientDAO.cs" />
+    <Compile Include="client\fachada.cs" />
+    <Compile Include="accountrecord\action\doAdd.cs" />
+    <Compile Include="accountrecord\action\doDelete.cs" />
+    <Compile Include="accountrecord\action\doGet.cs" />
+    <Compile Include="accountrecord\action\doGetAll.cs" />
+    <Compile Include="accountrecord\action\doUpdate.cs" />
+    <Compile Include="accountrecord\dao\accountrecordDAO.cs" />
+    <Compile Include="accountrecord\fachada.cs" />
+    <Compile Include="activity\action\doAdd.cs" />
+    <Compile Include="activity\action\doDelete.cs" />
+    <Compile Include="activity\action\doGet.cs" />
+    <Compile Include="activity\action\doGetAll.cs" />
+    <Compile Include="activity\action\doUpdate.cs" />
+    <Compile Include="activity\dao\activityDAO.cs" />
+    <Compile Include="activity\fachada.cs" />
+    <Compile Include="employment\action\doGetAll.cs" />
+    <Compile Include="employment\action\doGetAllByCustomer.cs" />
+    <Compile Include="payment\action\doGetAllByInvoice.cs" />
+    <Compile Include="payment\action\doAdd.cs" />
+    <Compile Include="payment\action\doDelete.cs" />
+    <Compile Include="payment\action\doGet.cs" />
+    <Compile Include="payment\action\doGetAll.cs" />
+    <Compile Include="payment\action\doUpdate.cs" />
+    <Compile Include="payment\dao\paymentDAO.cs" />
+    <Compile Include="payment\fachada.cs" />
+    <Compile Include="counter\action\doAdd.cs" />
+    <Compile Include="counter\action\doDelete.cs" />
+    <Compile Include="counter\action\doGet.cs" />
+    <Compile Include="counter\action\doGetAll.cs" />
+    <Compile Include="counter\action\doUpdate.cs" />
+    <Compile Include="counter\dao\counterDAO.cs" />
+    <Compile Include="counter\fachada.cs" />
+    <Compile Include="invoice\action\doGetAllByIncome.cs" />
+    <Compile Include="serie\action\doAdd.cs" />
+    <Compile Include="serie\action\doDelete.cs" />
+    <Compile Include="serie\action\doGet.cs" />
+    <Compile Include="serie\action\doGetAll.cs" />
+    <Compile Include="serie\action\doUpdate.cs" />
+    <Compile Include="serie\dao\serieDAO.cs" />
+    <Compile Include="serie\fachada.cs" />
+    <Compile Include="payable\action\doAdd.cs" />
+    <Compile Include="payable\action\doDelete.cs" />
+    <Compile Include="payable\action\doGet.cs" />
+    <Compile Include="payable\action\doGetAll.cs" />
+    <Compile Include="payable\action\doUpdate.cs" />
+    <Compile Include="payable\dao\payableDAO.cs" />
+    <Compile Include="payable\fachada.cs" />
+    <Compile Include="invoicedetail\action\doGetAllByInvoice.cs" />
+    <Compile Include="service\action\doGetAllByIncome.cs" />
+    <Compile Include="skillscore\action\doAdd.cs" />
+    <Compile Include="skillscore\action\doDelete.cs" />
+    <Compile Include="skillscore\action\doGet.cs" />
+    <Compile Include="skillscore\action\doGetAll.cs" />
+    <Compile Include="skillscore\action\doUpdate.cs" />
+    <Compile Include="skillscore\dao\skillscoreDAO.cs" />
+    <Compile Include="skillscore\fachada.cs" />
+    <Compile Include="skill\action\doAdd.cs" />
+    <Compile Include="skill\action\doDelete.cs" />
+    <Compile Include="skill\action\doGet.cs" />
+    <Compile Include="skill\action\doGetAll.cs" />
+    <Compile Include="skill\action\doUpdate.cs" />
+    <Compile Include="skill\dao\skillDAO.cs" />
+    <Compile Include="skill\fachada.cs" />
+    <Compile Include="invoicedetail\action\doAdd.cs" />
+    <Compile Include="invoicedetail\action\doDelete.cs" />
+    <Compile Include="invoicedetail\action\doGet.cs" />
+    <Compile Include="invoicedetail\action\doGetAll.cs" />
+    <Compile Include="invoicedetail\action\doUpdate.cs" />
+    <Compile Include="invoicedetail\dao\invoicedetailDAO.cs" />
+    <Compile Include="invoicedetail\fachada.cs" />
+    <Compile Include="message\action\doAdd.cs" />
+    <Compile Include="message\action\doDelete.cs" />
+    <Compile Include="message\action\doGet.cs" />
+    <Compile Include="message\action\doGetAll.cs" />
+    <Compile Include="message\action\doUpdate.cs" />
+    <Compile Include="message\dao\messageDAO.cs" />
+    <Compile Include="message\fachada.cs" />
+    <Compile Include="staff\action\doAdd.cs" />
+    <Compile Include="staff\action\doDelete.cs" />
+    <Compile Include="staff\action\doGet.cs" />
+    <Compile Include="staff\action\doGetAll.cs" />
+    <Compile Include="staff\action\doUpdate.cs" />
+    <Compile Include="staff\dao\staffDAO.cs" />
+    <Compile Include="staff\fachada.cs" />
+    <Compile Include="invoice\action\doAdd.cs" />
+    <Compile Include="invoice\action\doDelete.cs" />
+    <Compile Include="invoice\action\doGet.cs" />
+    <Compile Include="invoice\action\doGetAll.cs" />
+    <Compile Include="invoice\action\doUpdate.cs" />
+    <Compile Include="invoice\dao\invoiceDAO.cs" />
+    <Compile Include="invoice\fachada.cs" />
+    <Compile Include="service\action\doAdd.cs" />
+    <Compile Include="service\action\doDelete.cs" />
+    <Compile Include="service\action\doGet.cs" />
+    <Compile Include="service\action\doGetAll.cs" />
+    <Compile Include="service\action\doUpdate.cs" />
+    <Compile Include="service\dao\serviceDAO.cs" />
+    <Compile Include="service\fachada.cs" />
+    <Compile Include="task\action\doAdd.cs" />
+    <Compile Include="task\action\doDelete.cs" />
+    <Compile Include="task\action\doGet.cs" />
+    <Compile Include="task\action\doGetAll.cs" />
+    <Compile Include="task\action\doUpdate.cs" />
+    <Compile Include="task\dao\taskDAO.cs" />
+    <Compile Include="task\fachada.cs" />
+    <Compile Include="employment\action\doAdd.cs" />
+    <Compile Include="employment\action\doDelete.cs" />
+    <Compile Include="employment\action\doGet.cs" />
+    <Compile Include="employment\action\doGetAllByClient.cs" />
+    <Compile Include="employment\action\doUpdate.cs" />
+    <Compile Include="employment\dao\employmentDAO.cs" />
+    <Compile Include="employment\fachada.cs" />
+    <Compile Include="_events\asrEventArgs.cs" />
+    <Compile Include="_events\ProgressEventArgs.cs" />
+    <Compile Include="customer\action\doAdd.cs" />
+    <Compile Include="customer\action\doDelete.cs" />
+    <Compile Include="customer\action\doGet.cs" />
+    <Compile Include="customer\action\doGetAll.cs" />
+    <Compile Include="customer\action\doUpdate.cs" />
+    <Compile Include="customer\dao\customerDAO.cs" />
+    <Compile Include="customer\fachada.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_common\conexion\tCONEXION.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_common\DAOFactory.cs" />
+    <Compile Include="_common\facade.cs" />
+    <Compile Include="_common\plain\NonTransactionalPlainAction.cs" />
+    <Compile Include="_common\plain\PlainAction.cs" />
+    <Compile Include="_common\plain\PlainActionProcessor.cs" />
+    <Compile Include="_common\plain\TransactionalPlainAction.cs" />
+    <Compile Include="_common\util.cs" />
+    <Compile Include="_template\objectDAO.cs" />
+    <Compile Include="_template\tDAOAction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\asr.lib.common\asr.lib.common.csproj">
+      <Project>{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}</Project>
+      <Name>asr.lib.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\asr.lib.vo\asr.lib.vo.csproj">
+      <Project>{B95F238C-8B83-41F0-9D42-87B4E063215F}</Project>
+      <Name>asr.lib.vo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

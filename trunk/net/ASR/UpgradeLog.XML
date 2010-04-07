@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="gesClinica">
+</Property><Property Name="Archivo de la solución" Value="C:\Documents and Settings\user\Desktop\dev\gesClinica\gesClinica.sln">
+</Property><Property Name="Date" Value="Saturday, November 15, 2008">
+</Property><Property Name="Time" Value="12:47 PM">
+</Property></Properties><Event ErrorLevel="0" Project="gesClinica.lib.vo" Source="gesClinica.lib.vo\gesClinica.lib.vo.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="gesClinica.lib.vo" Source="gesClinica.lib.vo\gesClinica.lib.vo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="gesClinica.lib.dao" Source="gesClinica.lib.dao\gesClinica.lib.dao.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="gesClinica.lib.dao" Source="gesClinica.lib.dao\gesClinica.lib.dao.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="gesClinica.lib.bl" Source="gesClinica.lib.bl\gesClinica.lib.bl.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="gesClinica.lib.bl" Source="gesClinica.lib.bl\gesClinica.lib.bl.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="gesClinica.lib.common" Source="gesClinica.lib.common\gesClinica.lib.common.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="gesClinica.lib.common" Source="gesClinica.lib.common\gesClinica.lib.common.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="gesClinica.app.pc" Source="gesClinica.app.pc\gesClinica.app.pc.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="gesClinica.app.pc" Source="gesClinica.app.pc\gesClinica.app.pc.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="gesClinica.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="gesClinica.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="gesClinica.lib.vo" Source="gesClinica.lib.vo\gesClinica.lib.vo.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event><Event ErrorLevel="0" Project="gesClinica.lib.dao" Source="gesClinica.lib.dao\gesClinica.lib.dao.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event><Event ErrorLevel="0" Project="gesClinica.lib.bl" Source="gesClinica.lib.bl\gesClinica.lib.bl.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event><Event ErrorLevel="0" Project="gesClinica.lib.common" Source="gesClinica.lib.common\gesClinica.lib.common.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event><Event ErrorLevel="0" Project="gesClinica.app.pc" Source="gesClinica.app.pc\gesClinica.app.pc.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event></UpgradeLog>

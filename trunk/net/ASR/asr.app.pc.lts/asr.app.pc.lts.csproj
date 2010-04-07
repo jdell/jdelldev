@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C783BDA-1F04-496F-AF3D-A9667948A33F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>asr.app.pc.lts</RootNamespace>
+    <AssemblyName>asr.app.pc.lts</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'lts|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\lts\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LTS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="framework.exceptions, Version=0.0.8.0, Culture=neutral, PublicKeyToken=d0dfd29390566188, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.forms, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.forms.controls, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.forms.controls.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.util, Version=0.0.8.0, Culture=neutral, PublicKeyToken=43ecb7b0d9a31afb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.util.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm\client\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\client\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\client\employment\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\client\employment\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\client\employment\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\client\employment\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\client\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\client\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\client\skillscore\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\client\skillscore\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\client\skillscore\ctrl\ctrlQueryBySkill.cs" />
+    <Compile Include="frm\client\skillscore\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\client\skillscore\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\client\skillscore\frmQueryBySkill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\client\tCLIENTQUERY.cs" />
+    <Compile Include="frm\invoice\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\invoice\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\invoice\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\invoice\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\message\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\message\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\message\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\message\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\payable\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\payable\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\payable\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\payable\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\serie\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\serie\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\serie\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\serie\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\service\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\service\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\service\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\service\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\staff\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\staff\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\staff\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\staff\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\task\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\task\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\task\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\task\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_acercade\ctrl\ctrlAcercaDe.cs" />
+    <Compile Include="frm\_acercade\frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_main\ctrl\ctrlMain.cs" />
+    <Compile Include="frm\_main\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_receipt\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\_receipt\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_report\invoicedetailchart\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\_report\invoicedetailchart\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_report\invoicedetail\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\_report\invoicedetail\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_splash\ctrl\ctrlSplash.cs" />
+    <Compile Include="frm\_splash\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm\client\employment\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\client\employment\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\client\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\client\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\client\skillscore\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\client\skillscore\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\client\skillscore\frmQueryBySkill.resx">
+      <DependentUpon>frmQueryBySkill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\invoice\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\invoice\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\message\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\message\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\payable\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\payable\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\serie\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\serie\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\service\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\service\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\staff\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\staff\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\task\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\task\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_acercade\frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_main\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_receipt\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_report\invoicedetailchart\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_report\invoicedetail\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_splash\frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="_common\cache.cs" />
+    <Compile Include="_common\constantes\format.cs" />
+    <Compile Include="_common\constantes\messages.cs" />
+    <Compile Include="_common\funciones\Convert.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\asr.app.pc.template\asr.app.pc.template.csproj">
+      <Project>{88AAF2BF-5B54-4DAF-9E22-ED65B0EAE5C7}</Project>
+      <Name>asr.app.pc.template</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\asr.lib.bl\asr.lib.bl.csproj">
+      <Project>{26CD0944-60E2-4878-A179-2B3E5F558ADD}</Project>
+      <Name>asr.lib.bl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\asr.lib.common\asr.lib.common.csproj">
+      <Project>{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}</Project>
+      <Name>asr.lib.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\asr.lib.vo\asr.lib.vo.csproj">
+      <Project>{B95F238C-8B83-41F0-9D42-87B4E063215F}</Project>
+      <Name>asr.lib.vo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Client.png" />
+    <None Include="Resources\TaskHS.png" />
+    <None Include="Resources\SingleMessage.ico" />
+    <None Include="Resources\btn_prices_small.gif" />
+    <None Include="Resources\Messages.ico" />
+    <None Include="Resources\testMDI.JPG" />
+    <Content Include="_template\_images\background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_template\_images\logo.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_template\_images\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_template\_images\logoWaterMark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_common\secciones\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

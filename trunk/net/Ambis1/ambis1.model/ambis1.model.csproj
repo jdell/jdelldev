@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8097947-F652-4D85-85B0-E831726C9587}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ambis1.model</RootNamespace>
+    <AssemblyName>ambis1.model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="framework.crypto, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.exceptions, Version=0.0.8.0, Culture=neutral, PublicKeyToken=d0dfd29390566188, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.util, Version=0.0.8.0, Culture=neutral, PublicKeyToken=43ecb7b0d9a31afb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.util.dll</HintPath>
+    </Reference>
+    <Reference Include="libgc_util, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\libgc_util.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Synchronization.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Synchronization.Data.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Synchronization.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bl\cage\doAdd.cs" />
+    <Compile Include="bl\cage\doDelete.cs" />
+    <Compile Include="bl\cage\doGet.cs" />
+    <Compile Include="bl\cage\doGetAll.cs" />
+    <Compile Include="bl\cage\doUpdate.cs" />
+    <Compile Include="bl\holiday\doIsHoliday.cs" />
+    <Compile Include="bl\holiday\doSetUnset.cs" />
+    <Compile Include="bl\holiday\doAdd.cs" />
+    <Compile Include="bl\holiday\doDelete.cs" />
+    <Compile Include="bl\holiday\doGetAll.cs" />
+    <Compile Include="bl\member\doGetAllByTypes.cs" />
+    <Compile Include="bl\member\doUpdate.cs" />
+    <Compile Include="bl\reservation\doAdd.cs" />
+    <Compile Include="bl\reservation\doDelete.cs" />
+    <Compile Include="bl\reservation\doGet.cs" />
+    <Compile Include="bl\reservation\doGetAll.cs" />
+    <Compile Include="bl\reservation\doUpdate.cs" />
+    <Compile Include="bl\membership\doGetByMember.cs" />
+    <Compile Include="bl\membership\doAdd.cs" />
+    <Compile Include="bl\membership\doDelete.cs" />
+    <Compile Include="bl\membership\doGet.cs" />
+    <Compile Include="bl\membership\doGetAll.cs" />
+    <Compile Include="bl\membership\doUpdate.cs" />
+    <Compile Include="bl\member\doGetAllPlayersByTeam.cs" />
+    <Compile Include="bl\member\doGetAll.cs" />
+    <Compile Include="bl\member\doGet.cs" />
+    <Compile Include="bl\member\doGetAllByType.cs" />
+    <Compile Include="bl\typeofmembership\doAdd.cs" />
+    <Compile Include="bl\typeofmembership\doDelete.cs" />
+    <Compile Include="bl\typeofmembership\doGet.cs" />
+    <Compile Include="bl\typeofmembership\doGetAll.cs" />
+    <Compile Include="bl\typeofmembership\doUpdate.cs" />
+    <Compile Include="bl\_alert\doGetAllBirthdays.cs" />
+    <Compile Include="bl\_alert\doGetAllExpirations.cs" />
+    <Compile Include="bl\_common\cache.cs" />
+    <Compile Include="bl\_common\constants\message.cs" />
+    <Compile Include="bl\_common\custom\Alert.cs" />
+    <Compile Include="bl\_common\custom\BirthDaysAlert.cs" />
+    <Compile Include="bl\_common\custom\MembershipExpirationAlert.cs" />
+    <Compile Include="bl\_common\functions\check.cs" />
+    <Compile Include="bl\_common\sections\AdministracionSection.cs" />
+    <Compile Include="bl\_common\sections\MainConfigSection.cs" />
+    <Compile Include="bl\_common\sections\CompanyInfoSection.cs" />
+    <Compile Include="bl\_common\sections\MaintenanceSection.cs" />
+    <Compile Include="bl\_events\ambis1EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bl\_events\ProgressEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bl\_exceptions\ambis1Exception.cs" />
+    <Compile Include="bl\_exceptions\common\AccessNotAllowedException.cs" />
+    <Compile Include="bl\_exceptions\common\ConfigFileNotFoundException.cs" />
+    <Compile Include="bl\_exceptions\common\IncorrectFormatConfigFileException.cs" />
+    <Compile Include="bl\_exceptions\common\InitializeCacheException.cs" />
+    <Compile Include="bl\_exceptions\common\NullReferenceException.cs" />
+    <Compile Include="bl\_exceptions\common\OutOfServiceException.cs" />
+    <Compile Include="bl\_exceptions\member\MissingDateOfBirthException.cs" />
+    <Compile Include="bl\_exceptions\member\MissingAddressException.cs" />
+    <Compile Include="bl\_exceptions\member\MissingNameException.cs" />
+    <Compile Include="bl\_exceptions\reservation\MissingCageException.cs" />
+    <Compile Include="bl\_exceptions\reservation\MissingMemberException.cs" />
+    <Compile Include="bl\_exceptions\validatingException.cs" />
+    <Compile Include="bl\_reports\Informe.cs" />
+    <Compile Include="bl\_template\actionBL.cs" />
+    <Compile Include="bl\_template\generalActionBL.cs" />
+    <Compile Include="bl\_template\masteruserActionBL.cs" />
+    <Compile Include="common\constant\empty.cs" />
+    <Compile Include="common\functions\enumHelper.cs" />
+    <Compile Include="common\functions\filter.cs" />
+    <Compile Include="common\types\EnumDescripcionAttribute.cs" />
+    <Compile Include="common\types\ParDateTime.cs" />
+    <Compile Include="common\types\ParObject.cs" />
+    <Compile Include="common\types\section.cs" />
+    <Compile Include="common\variables\configpath.cs" />
+    <Compile Include="dao\cage\action\doAdd.cs" />
+    <Compile Include="dao\cage\action\doDelete.cs" />
+    <Compile Include="dao\cage\action\doGet.cs" />
+    <Compile Include="dao\cage\action\doGetAll.cs" />
+    <Compile Include="dao\cage\action\doUpdate.cs" />
+    <Compile Include="dao\cage\dao\cageDAO.cs" />
+    <Compile Include="dao\cage\facade.cs" />
+    <Compile Include="dao\holiday\action\doAdd.cs" />
+    <Compile Include="dao\holiday\action\doDelete.cs" />
+    <Compile Include="dao\holiday\action\doGet.cs" />
+    <Compile Include="dao\holiday\action\doGetAll.cs" />
+    <Compile Include="dao\holiday\action\doUpdate.cs" />
+    <Compile Include="dao\holiday\dao\holidayDAO.cs" />
+    <Compile Include="dao\holiday\facade.cs" />
+    <Compile Include="dao\reservation\action\doAdd.cs" />
+    <Compile Include="dao\reservation\action\doDelete.cs" />
+    <Compile Include="dao\reservation\action\doGet.cs" />
+    <Compile Include="dao\reservation\action\doGetAll.cs" />
+    <Compile Include="dao\reservation\action\doUpdate.cs" />
+    <Compile Include="dao\reservation\dao\reservationDAO.cs" />
+    <Compile Include="dao\reservation\facade.cs" />
+    <Compile Include="dao\counter\dao\counterDAO.cs" />
+    <Compile Include="dao\membership\action\doGetByMember.cs" />
+    <Compile Include="dao\membership\action\doAdd.cs" />
+    <Compile Include="dao\membership\action\doDelete.cs" />
+    <Compile Include="dao\membership\action\doGet.cs" />
+    <Compile Include="dao\membership\action\doGetAll.cs" />
+    <Compile Include="dao\membership\action\doUpdate.cs" />
+    <Compile Include="dao\membership\dao\membershipDAO.cs" />
+    <Compile Include="dao\membership\facade.cs" />
+    <Compile Include="dao\member\action\doGetAllByParent.cs" />
+    <Compile Include="dao\member\action\doGetAllByType.cs" />
+    <Compile Include="dao\member\action\doAdd.cs" />
+    <Compile Include="dao\member\action\doDelete.cs" />
+    <Compile Include="dao\member\action\doGet.cs" />
+    <Compile Include="dao\member\action\doGetAll.cs" />
+    <Compile Include="dao\member\action\doUpdate.cs" />
+    <Compile Include="dao\member\dao\memberDAO.cs" />
+    <Compile Include="dao\member\facade.cs" />
+    <Compile Include="dao\typeofmembership\action\doAdd.cs" />
+    <Compile Include="dao\typeofmembership\action\doDelete.cs" />
+    <Compile Include="dao\typeofmembership\action\doGet.cs" />
+    <Compile Include="dao\typeofmembership\action\doGetAll.cs" />
+    <Compile Include="dao\typeofmembership\action\doUpdate.cs" />
+    <Compile Include="dao\typeofmembership\dao\typeofmembershipDAO.cs" />
+    <Compile Include="dao\typeofmembership\facade.cs" />
+    <Compile Include="dao\_common\connection\tCONNECTION.cs" />
+    <Compile Include="dao\_common\DAOFactory.cs" />
+    <Compile Include="dao\_common\facade.cs" />
+    <Compile Include="dao\_common\plain\NonTransactionalPlainAction.cs" />
+    <Compile Include="dao\_common\plain\PlainAction.cs" />
+    <Compile Include="dao\_common\plain\PlainActionProcessor.cs" />
+    <Compile Include="dao\_common\plain\TransactionalPlainAction.cs" />
+    <Compile Include="dao\_common\util.cs" />
+    <Compile Include="dao\_events\asrEventArgs.cs" />
+    <Compile Include="dao\_events\ProgressEventArgs.cs" />
+    <Compile Include="dao\_synchronize\facade.cs" />
+    <Compile Include="dao\_template\objectDAO.cs" />
+    <Compile Include="dao\_template\tDAOAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vo\Holiday.cs" />
+    <Compile Include="vo\Reservation.cs" />
+    <Compile Include="vo\Cage.cs" />
+    <Compile Include="vo\Counter.cs" />
+    <Compile Include="vo\Member.cs" />
+    <Compile Include="vo\Membership.cs" />
+    <Compile Include="vo\Player.cs" />
+    <Compile Include="vo\tCOUNTER.cs" />
+    <Compile Include="vo\Team.cs" />
+    <Compile Include="vo\tMEMBER.cs" />
+    <Compile Include="vo\TypeOfMembership.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\dptc_localdata.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_sql\base.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_8.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_7.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_6.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_5.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_4.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_3.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_2.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_1.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\_upgrade_example.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dao\counter\action\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

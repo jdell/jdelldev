@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuracion>
+  <App />
+  <common>
+    
+    <seccion name="CompanyInfo" >
+      <add key="CompanyName" value="LTS" />
+      <add key="CompanyAddress" value="Your Address" />
+      <add key="CompanyCity" value="Your City" />
+      <add key="CompanyState" value="Your State" />
+      <add key="CompanyZipCode" value="Your Zip Code" />
+      <add key="CompanyPhone1" value="Your Phone1" />
+      <add key="CompanyPhone2" value="Your Phone2" />
+      <add key="CompanyFax" value="Your Fax" />
+      <add key="CompanyTaxPercentage" value="8" />
+    </seccion>
+    <seccion name="administracion" >
+      <add key="MasterUser" value="USER;JOE" />
+      <add key="SystemUser" value="asr" />
+      <!-- Esto hay que ponerlo en la seccion Windows o Desktop o ...-->
+      <add key="PresentationMode" value="False" />
+      <add key="AccountRecordChartMonths" value="6" />
+      <add key="UlrASRBridge" value="http://bookkeeping.affinityresources.info/asrbridge.php" />
+    </seccion>
+    <seccion name="dataBaseConfig">
+      
+      <!--<add key="parameterPrefix" value="@" />
+      <add key="getIdentity" value="@@IDENTITY" />
+      <add key="getIsNull" value="ISNULL" />
+      <add key="callStoredProcedure" value="EXEC" />-->
+      
+      <add key="parameterPrefix" value="?" />
+      <add key="getIdentity" value="LAST_INSERT_ID()" />
+      <add key="getIsNull" value="IFNULL" />
+      <add key="callStoredProcedure" value="CALL" />
+      
+    </seccion>
+    <conexiones>
+      <!--<conexion Name="asr" ProviderName="MySql.Data.MySqlClient" ConnectionString="Data Source=company-2263cf4;Initial Catalog=asr;Persist Security Info=True;User ID=asr;password=asr" appRoleName="" appRolePwd=""/>-->
+     <!--<conexion Name="asr" ProviderName="MySql.Data.MySqlClient" ConnectionString="b1e7715ce37e063c9fd16113440381dc469ad4d71372ca98440d60f8ba9ce65a463ecaf929d3d1d5f794ea290544c9bae81f03a4ca119183615b08c0ef9412456d10a9ce4728d80fa16925228ec91241500b49bd7cbdb4e68cd85d29ef59c2deb46495ad56d2abb8" appRoleName="" appRolePwd=""/>-->
+      <!-- ASR Version -->
+      <conexion Name="asr" ProviderName="MySql.Data.MySqlClient" ConnectionString="b1e7715ce37e063c7e7b52c56b785d3a2e70eb1790e3f50d89dbe65a4fae73796600b357f838ca494d27a3d98a2122756955032a2266c68d82f95965fc3ec7f0637595582f02cc122031724acd8ea40df6e81d336b8cc281b820c8865892c584" appRoleName="" appRolePwd="" />
+      <!-- LTS Version -->
+      <conexion Name="lts" ProviderName="MySql.Data.MySqlClient" ConnectionString="b1e7715ce37e063c7e7b52c56b785d3a2e70eb1790e3f50d89dbe65a4fae7379d8a3145dfee6081b4c2cab66298ea956f21bbee0e881d5217fae15614a3e775fe3fe6d11d169bc86c449844c2fdb275632f0ac08dd556f3e8eb2269a599445ab" appRoleName="" appRolePwd="" />     
+    </conexiones>
+  </common>
+
+</configuracion>

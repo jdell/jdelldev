@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88AAF2BF-5B54-4DAF-9E22-ED65B0EAE5C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>asr.app.pc.template</RootNamespace>
+    <AssemblyName>asr.app.pc.template</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'lts|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\lts\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Client|AnyCPU' ">
+    <OutputPath>bin\Client\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="framework.exceptions, Version=0.0.8.0, Culture=neutral, PublicKeyToken=d0dfd29390566188, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.forms, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.forms.controls, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.forms.controls.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.util, Version=0.0.8.0, Culture=neutral, PublicKeyToken=43ecb7b0d9a31afb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.util.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controls\AddressBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\AddressBox.Designer.cs">
+      <DependentUpon>AddressBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\PictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\SuperToolTip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\SuperToolTip.Designer.cs">
+      <DependentUpon>SuperToolTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\SuperToolTipClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\TextBoxKDBII.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frm\BaseCtrl.cs" />
+    <Compile Include="frm\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\consulta\ctrl\QueryCtrl.cs" />
+    <Compile Include="frm\consulta\QueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\edicion\ctrl\EditCtrl.cs" />
+    <Compile Include="frm\edicion\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\impresion\ctrl\PrintCtrl.cs" />
+    <Compile Include="frm\impresion\PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\principal\ctrl\MainCtrl.cs" />
+    <Compile Include="frm\principal\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfaces\IPresentation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="controls\AddressBox.resx">
+      <DependentUpon>AddressBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\PictureBox.resx">
+      <DependentUpon>PictureBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\SuperToolTip.resx">
+      <DependentUpon>SuperToolTip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\SuperToolTipClient.resx">
+      <DependentUpon>SuperToolTipClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\consulta\QueryForm.resx">
+      <DependentUpon>QueryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\edicion\EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\impresion\PrintForm.resx">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\principal\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="_common\extend.cs" />
+    <Compile Include="_common\messages.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="controls\images\AlignTableCellMiddleCenterHS.png" />
+    <Content Include="controls\images\AlignTableCellMiddleLeftJustHS.PNG" />
+    <Content Include="controls\images\AlignTableCellMiddleRightHS.png" />
+    <Content Include="controls\images\boldhs.png" />
+    <Content Include="controls\images\Color_fontHS.png" />
+    <Content Include="controls\images\CopyHS.png" />
+    <Content Include="controls\images\CutHS.png" />
+    <Content Include="controls\images\Edit_RedoHS.png" />
+    <Content Include="controls\images\Edit_UndoHS.png" />
+    <Content Include="controls\images\FontDialogHS.png" />
+    <Content Include="controls\images\FontHS.png" />
+    <Content Include="controls\images\ItalicHS.png" />
+    <Content Include="controls\images\openfolderHS.png" />
+    <Content Include="controls\images\PasteHS.png" />
+    <Content Include="controls\images\PrintHS.png" />
+    <Content Include="controls\images\PrintPreviewHS.png" />
+    <Content Include="controls\images\PrintSetupHS.png" />
+    <Content Include="controls\images\saveHS.png" />
+    <Content Include="controls\images\Undo_Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\asr.lib.bl\asr.lib.bl.csproj">
+      <Project>{26CD0944-60E2-4878-A179-2B3E5F558ADD}</Project>
+      <Name>asr.lib.bl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\asr.lib.vo\asr.lib.vo.csproj">
+      <Project>{B95F238C-8B83-41F0-9D42-87B4E063215F}</Project>
+      <Name>asr.lib.vo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

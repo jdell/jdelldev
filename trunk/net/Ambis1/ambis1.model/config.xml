@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuracion>
+  <App>
+    <seccion name="fontAgenda">
+      <!-- Regular, Bold, Italic -->
+      <add key="styleFontAgenda" value="Bold" />
+      <!-- Tahoma, Microsoft Sans Serif, Verdana, Arial, etc-->
+      <add key="nameFontAgenda" value="Verdana" />
+      <add key="sizeFontAgenda" value="8.25" />
+    </seccion>
+  </App>
+  <common>
+    <seccion name="MainConfig" >
+      <add key="HoraEntrada" value="8" />
+      <add key="MinutoEntrada" value="0" />
+      <add key="HoraSalida" value="23" />
+      <add key="MinutoSalida" value="59" />
+      <!-- TimeOutAgenda: Minutos para actualizar la agenda -->
+      <add key="TimeOutAgenda" value="1" />
+      <!-- Salto para la agenda. Por defecto, 10 minutos -->
+      <add key="saltoAgenda" value="30" />
+    </seccion>
+    <seccion name="CompanyInfo" >
+      <add key="CompanyName" value="LTS" />
+      <add key="CompanyAddress" value="Your Address" />
+      <add key="CompanyCity" value="Your City" />
+      <add key="CompanyState" value="Your State" />
+      <add key="CompanyZipCode" value="Your Zip Code" />
+      <add key="CompanyPhone1" value="Your Phone1" />
+      <add key="CompanyPhone2" value="Your Phone2" />
+      <add key="CompanyFax" value="Your Fax" />
+    </seccion>
+    <seccion name="administracion" >
+      <add key="MasterUser" value="USER" />
+      <add key="SystemUser" value="asr" />
+      <!-- Esto hay que ponerlo en la seccion Windows o Desktop o ...-->
+      <add key="PresentationMode" value="False" />
+      <add key="AccountRecordChartMonths" value="6" />
+    </seccion>
+    <seccion name="dataBaseConfig">
+      
+      <add key="localParameterPrefix" value="@" />
+      <add key="localGetIdentity" value="@@IDENTITY" />
+      <add key="localGetIsNull" value="ISNULL" />
+      <add key="localCallStoredProcedure" value="EXEC" />
+      
+      <add key="serverParameterPrefix" value="?" />
+      <add key="serverGetIdentity" value="LAST_INSERT_ID()" />
+      <add key="serverGetIsNull" value="IFNULL" />
+      <add key="serverCallStoredProcedure" value="CALL" />
+      
+    </seccion>
+    <conexiones>
+      <conexion Name="local" ProviderName="System.Data.SqlServerCe" ConnectionString="b1e7715ce37e063c5a12b72b4e33447eceb9fc35e06087766af5091859eb4fd3b94ebb854303bd316c788c8d3abd245127b437f98379f771" appRoleName="" appRolePwd="" />
+      <conexion Name="server" ProviderName="MySql.Data.MySqlClient" ConnectionString="b1e7715ce37e063c4402f6b7107aca2d88650c7d813157f2424cdb93eb39e5be0b18a06210f671103314a5e8507aacf82cc43329756f460077c6fc9acf382dc6f50fde5b184b9326c1ad8af5f473329fb082eb671068dc6ee3a22639d5f45a5986c52a9f6b12e74ade88e22bcf940683863bcd80672975a4b4f955b9ca669e6605fad3c8196c1fb6" appRoleName="" appRolePwd="" />
+      <!--<conexion Name="server_good" ProviderName="MySql.Data.MySqlClient" ConnectionString="b1e7715ce37e063c4402f6b7107aca2d88650c7d813157f2d2f5940cd742e94d4fbaf1817f964db899037540e774706ec1f61e1451db8055723f5e413ff7d8268afbd8c2c929faa22571c15a2afb2c7634e3f699fa5bc3ab7132efa2033682498007ee2d1542d56800c2717d0e9aee1e040b8bbd9d72d02b6bfd0da09cdb70298c3a836ce76754f5" appRoleName="" appRolePwd="" />-->
+    </conexiones>
+  </common>
+
+</configuracion>
