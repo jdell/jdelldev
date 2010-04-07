@@ -1,0 +1,1386 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94330445-2440-4251-BEDA-E51D71F417DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gesClinica.app.pc</RootNamespace>
+    <AssemblyName>gesClinica</AssemblyName>
+    <Win32Resource>
+    </Win32Resource>
+    <ApplicationIcon>_template\_images\logo_nuevo.ico</ApplicationIcon>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Calendar.DayView, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\Calendar.DayView.dll</HintPath>
+    </Reference>
+    <Reference Include="CalWidget, Version=1.0.2587.6804, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\CalWidget.dll</HintPath>
+    </Reference>
+    <Reference Include="dynamoReport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\dynamoReport.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.exceptions, Version=0.0.8.0, Culture=neutral, PublicKeyToken=d0dfd29390566188, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.forms, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.forms.controls, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.forms.controls.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.util, Version=0.0.8.0, Culture=neutral, PublicKeyToken=43ecb7b0d9a31afb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.util.dll</HintPath>
+    </Reference>
+    <Reference Include="ListView, Version=1.0.2587.6805, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\ListView.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MonthCalendar, Version=1.0.3126.25214, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\MonthCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="RTFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\RTFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm\apunte\ctrl\ctrlQuerySubCuenta.cs" />
+    <Compile Include="frm\apunte\frmQuerySubCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\apunte\frmQueryAmortizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\apunte\ctrl\ctrlQueryAmortizacion.cs" />
+    <Compile Include="frm\apunte\frmQueryFacturaRecibida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\apunte\ctrl\ctrlQueryFacturaRecibida.cs" />
+    <Compile Include="frm\apunte\ctrl\ctrlQueryFacturaEmitida.cs" />
+    <Compile Include="frm\apunte\frmQueryFacturaEmitida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\apunte\_setting\settingQueryFacturaEmitida.cs" />
+    <Compile Include="frm\apunte\_setting\settingQueryFacturaRecibida.cs" />
+    <Compile Include="frm\apunte\_setting\settingQueryAmortizacion.cs" />
+    <Compile Include="frm\apunte\_setting\settingQuerySubCuenta.cs" />
+    <Compile Include="frm\asiento\frmEditSueldosYSalarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\ctrl\ctrlEditSueldosYSalarios.cs" />
+    <Compile Include="frm\asiento\frmEditPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\ctrl\ctrlEditPrestamo.cs" />
+    <Compile Include="frm\asiento\frmEditOperacionAmortizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\ctrl\ctrlEditOperacionAmortizacion.cs" />
+    <Compile Include="frm\asiento\frmEditOperacionTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\ctrl\ctrlEditOperacionTransferencia.cs" />
+    <Compile Include="frm\asiento\frmEditOperacionGastoConPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\ctrl\ctrlEditOperacionGastoConPago.cs" />
+    <Compile Include="frm\asiento\frmEditOperacionGasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\ctrl\ctrlEditOperacionGasto.cs" />
+    <Compile Include="frm\asiento\ctrl\ctrlEditOperacionPago.cs" />
+    <Compile Include="frm\asiento\ctrl\ctrlEditIngresosAtipicos.cs" />
+    <Compile Include="frm\asiento\ctrl\ctrlEditParent.cs" />
+    <Compile Include="frm\asiento\frmEditIngresosAtipicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\frmEditOperacionPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\frmEditParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\frmEditParentOperacionesContables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\_setting\settingQuery.cs" />
+    <Compile Include="frm\cita\ctrl\ctrlEditTelefonica.cs" />
+    <Compile Include="frm\cita\frmEditTelefonica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\ctrl\ctrlAgendaPorPaciente.cs" />
+    <Compile Include="frm\cita\frmAgendaPorPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\ctrl\ctrlEditProgramada.cs" />
+    <Compile Include="frm\cita\frmEditProgramada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\ctrl\ctrlEditNotas.cs" />
+    <Compile Include="frm\cita\frmEditNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\ctrl\ctrlEditDatosClinicos.cs" />
+    <Compile Include="frm\cita\frmEditDatosClinicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\ctrl\ctrlAgendaGeneral.cs" />
+    <Compile Include="frm\cita\frmAgendaGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\ctrl\ctrlAgendaPorSala.cs" />
+    <Compile Include="frm\cita\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\cita\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\cita\frmAgendaPorSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\anexo\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\cita\anexo\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\cita\anexo\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\anexo\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\receta\ctrl\ctrlEditEmitirReceta.cs" />
+    <Compile Include="frm\cita\receta\frmEditEmitirReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\receta\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\cita\receta\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\cita\receta\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\cita\receta\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\receta\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\receta\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\receta\recetadetalle\frmEditPosologia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\receta\recetadetalle\ctrl\ctrlEditPosologia.cs" />
+    <Compile Include="frm\cita\receta\recetadetalle\ctrl\ctrlEditBusqueda.cs" />
+    <Compile Include="frm\cita\receta\recetadetalle\frmEditBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\receta\recetadetalle\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\cita\receta\recetadetalle\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\cita\receta\recetadetalle\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\receta\recetadetalle\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\_nuevo\ctrl\ctrlAgendaPorPaciente.cs" />
+    <Compile Include="frm\cita\_nuevo\frmAgendaPorPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\_nuevo\ctrl\ctrlAgendaGeneral.cs" />
+    <Compile Include="frm\cita\_nuevo\frmAgendaGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\cita\_settings\QuerySetting.cs" />
+    <Compile Include="frm\cita\_sintoma\ctrl\ctrlEditASintoma.cs" />
+    <Compile Include="frm\cita\_sintoma\frmEditASintoma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\componente\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\componente\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\componente\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\componente\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\asiento\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\asiento\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\asiento\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\apunte\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\apunte\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\apunte\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\apunte\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\factura\_setting\settingQuery.cs" />
+    <Compile Include="frm\paciente\_imprimirquiromasaje\frmImprimirQuiromasaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\terapia\_dependiente\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\terapia\_dependiente\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipoterapia\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\tipoterapia\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\tipoterapia\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipoterapia\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\estadoevento\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\estadoevento\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\estadoevento\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\estadoevento\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_aperturacierre\ctrl\ctrlAperturaCierre.cs" />
+    <Compile Include="frm\_aperturacierre\frmAperturaCierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tercero\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\tercero\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\tercero\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tercero\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_facturas\ctrl\ctrlPrintRecibidas.cs" />
+    <Compile Include="frm\_facturas\frmPrintRecibidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_facturas\ctrl\ctrlPrintEmitidas.cs" />
+    <Compile Include="frm\_facturas\frmPrintEmitidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\ctrl\ctrlQueryRazonSocial.cs" />
+    <Compile Include="frm\operacion\frmQueryRazonSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_configuracion\ctrl\ctrlEditConfiguracionContabilidad.cs" />
+    <Compile Include="frm\_configuracion\frmEditConfiguracionContabilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_configuracion\frmEditConfiguracionSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_configuracion\ctrl\ctrlEditConfiguracionSala.cs" />
+    <Compile Include="frm\_configuracion\frmEditConfiguracionPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_configuracion\ctrl\ctrlEditConfiguracionPago.cs" />
+    <Compile Include="frm\_configuracion\ctrl\ctrlEditConfiguracionCita.cs" />
+    <Compile Include="frm\_configuracion\frmEditConfiguracionCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_renumerar\ctrl\ctrlRenumerar.cs" />
+    <Compile Include="frm\_renumerar\frmRenumerar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_saldo\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\_saldo\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_imprimirfacturas\ctrl\ctrlImprimirFacturas.cs" />
+    <Compile Include="frm\_imprimirfacturas\frmImprimirFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\_resumenporactividad\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\operacion\_resumenporactividad\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\_resumenporterapeuta\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\operacion\_resumenporterapeuta\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\paciente\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\paciente\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipounidad\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\tipounidad\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\tipounidad\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipounidad\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\ejercicio\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\ejercicio\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\ejercicio\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\ejercicio\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\formapago\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\formapago\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\formapago\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\formapago\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\pago\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\pago\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\pago\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\pago\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\empresa\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\empresa\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\empresa\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\empresa\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\ctrl\ctrlEditOperacionPaciente.cs" />
+    <Compile Include="frm\operacion\frmEditOperacionPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\ctrl\ctrlEditCobroFueraCita.cs" />
+    <Compile Include="frm\operacion\frmEditCobroFueraCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\ctrl\ctrlEditPagoTerapeuta.cs" />
+    <Compile Include="frm\operacion\frmEditPagoTerapeuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\_detallesaldo\ctrl\ctrlDetalleSaldo.cs" />
+    <Compile Include="frm\operacion\_detallesaldo\frmDetalleSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\_operacionpacienteopcion\frmOperacionPacienteOpcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\paciente\ctrl\ctrlEditMuyImportante.cs" />
+    <Compile Include="frm\paciente\frmEditMuyImportante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipodocumento\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\tipodocumento\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\tipodocumento\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipodocumento\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\indicacion\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\indicacion\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\indicacion\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\indicacion\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\subcuenta\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\subcuenta\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\subcuenta\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\subcuenta\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\factura\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\factura\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\factura\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\factura\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\factura\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\factura\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\_detallefacturacion\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\operacion\_detallefacturacion\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\ctrl\ctrlCajaDiaria.cs" />
+    <Compile Include="frm\operacion\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\operacion\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\operacion\frmCajaDiaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\operacion\_reciboterapeuta\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\operacion\_reciboterapeuta\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipooperacion\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\tipooperacion\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\tipooperacion\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipooperacion\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\sintoma\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\sintoma\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\sintoma\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\sintoma\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tiposintoma\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\tiposintoma\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\tiposintoma\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tiposintoma\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\documento\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\documento\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\documento\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\documento\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\evento\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\evento\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\evento\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\evento\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipofestivo\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\tipofestivo\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\tipofestivo\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tipofestivo\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\extpaciente\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\extpaciente\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\festivo\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\festivo\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\producto\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\producto\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\producto\productodetalle\ctrl\ctrlEdit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frm\producto\productodetalle\ctrl\ctrlQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frm\producto\productodetalle\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\producto\productodetalle\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\producto\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\producto\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\laboratorio\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\laboratorio\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\laboratorio\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\laboratorio\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\estadocita\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\estadocita\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\estadocita\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\estadocita\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\paciente\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\paciente\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\paciente\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\paciente\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\empleado\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\empleado\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\empleado\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\empleado\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tarifa\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\tarifa\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\tarifa\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\tarifa\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\estadocivil\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\estadocivil\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\estadocivil\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\estadocivil\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\terapia\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\terapia\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\terapia\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\terapia\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\sala\ctrl\ctrlEdit.cs" />
+    <Compile Include="frm\sala\ctrl\ctrlQuery.cs" />
+    <Compile Include="frm\sala\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\sala\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_acercade\ctrl\ctrlAcercaDe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frm\_acercade\frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_contabilizar\ctrl\ctrlContabilizar.cs" />
+    <Compile Include="frm\_contabilizar\frmContabilizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_importacion\ctrl\ctrlImportacion.cs" />
+    <Compile Include="frm\_importacion\frmImportacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_principal\ctrl\ctrlPrincipal.cs" />
+    <Compile Include="frm\_principal\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_resumenfiscal\ctrl\ctrlPrint.cs" />
+    <Compile Include="frm\_resumenfiscal\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\_splash\ctrl\ctrlSplash.cs" />
+    <Compile Include="frm\_splash\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm\apunte\frmQuerySubCuenta.resx">
+      <DependentUpon>frmQuerySubCuenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\apunte\frmQueryAmortizacion.resx">
+      <DependentUpon>frmQueryAmortizacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\apunte\frmQueryFacturaRecibida.resx">
+      <DependentUpon>frmQueryFacturaRecibida.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\apunte\frmQueryFacturaEmitida.resx">
+      <DependentUpon>frmQueryFacturaEmitida.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditSueldosYSalarios.resx">
+      <DependentUpon>frmEditSueldosYSalarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditOperacionAmortizacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditOperacionAmortizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditOperacionGasto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditOperacionGasto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditOperacionPago.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditOperacionPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditOperacionTransferencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditOperacionTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditPrestamo.resx">
+      <DependentUpon>frmEditPrestamo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditIngresosAtipicos.resx">
+      <DependentUpon>frmEditIngresosAtipicos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditOperacionGastoConPago.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditOperacionGastoConPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditParent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEditParentOperacionesContables.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditParentOperacionesContables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\frmEditTelefonica.resx">
+      <DependentUpon>frmEditTelefonica.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\frmAgendaPorPaciente.resx">
+      <DependentUpon>frmAgendaPorPaciente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\frmEditProgramada.resx">
+      <DependentUpon>frmEditProgramada.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\frmEditNotas.resx">
+      <DependentUpon>frmEditNotas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\frmEditDatosClinicos.resx">
+      <DependentUpon>frmEditDatosClinicos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\frmAgendaGeneral.resx">
+      <DependentUpon>frmAgendaGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\frmAgendaPorSala.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAgendaPorSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\anexo\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\anexo\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\receta\frmEditEmitirReceta.resx">
+      <DependentUpon>frmEditEmitirReceta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\receta\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\receta\frmPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\receta\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\receta\recetadetalle\frmEditPosologia.resx">
+      <DependentUpon>frmEditPosologia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\receta\recetadetalle\frmEditBusqueda.resx">
+      <DependentUpon>frmEditBusqueda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\receta\recetadetalle\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\receta\recetadetalle\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\_nuevo\frmAgendaPorPaciente.resx">
+      <DependentUpon>frmAgendaPorPaciente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\_nuevo\frmAgendaGeneral.resx">
+      <DependentUpon>frmAgendaGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\cita\_sintoma\frmEditASintoma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditASintoma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\componente\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\componente\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\asiento\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\apunte\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\apunte\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\paciente\_imprimirquiromasaje\frmImprimirQuiromasaje.resx">
+      <DependentUpon>frmImprimirQuiromasaje.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\terapia\_dependiente\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipoterapia\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipoterapia\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\estadoevento\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\estadoevento\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_aperturacierre\frmAperturaCierre.resx">
+      <DependentUpon>frmAperturaCierre.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tercero\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tercero\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_facturas\frmPrintRecibidas.resx">
+      <DependentUpon>frmPrintRecibidas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_facturas\frmPrintEmitidas.resx">
+      <DependentUpon>frmPrintEmitidas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\frmQueryRazonSocial.resx">
+      <DependentUpon>frmQueryRazonSocial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_configuracion\frmEditConfiguracionContabilidad.resx">
+      <DependentUpon>frmEditConfiguracionContabilidad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_configuracion\frmEditConfiguracionSala.resx">
+      <DependentUpon>frmEditConfiguracionSala.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_configuracion\frmEditConfiguracionPago.resx">
+      <DependentUpon>frmEditConfiguracionPago.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_configuracion\frmEditConfiguracionCita.resx">
+      <DependentUpon>frmEditConfiguracionCita.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_renumerar\frmRenumerar.resx">
+      <DependentUpon>frmRenumerar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_saldo\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_imprimirfacturas\frmImprimirFacturas.resx">
+      <DependentUpon>frmImprimirFacturas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\_resumenporactividad\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\_resumenporterapeuta\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\paciente\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipounidad\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipounidad\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\ejercicio\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\ejercicio\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\formapago\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\formapago\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\pago\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\pago\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\empresa\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\empresa\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\frmEditOperacionPaciente.resx">
+      <DependentUpon>frmEditOperacionPaciente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\frmEditCobroFueraCita.resx">
+      <DependentUpon>frmEditCobroFueraCita.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\frmEditPagoTerapeuta.resx">
+      <DependentUpon>frmEditPagoTerapeuta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\_detallesaldo\frmDetalleSaldo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDetalleSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\_operacionpacienteopcion\frmOperacionPacienteOpcion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOperacionPacienteOpcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\paciente\frmEditMuyImportante.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditMuyImportante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipodocumento\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipodocumento\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\indicacion\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\indicacion\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\subcuenta\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\subcuenta\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\factura\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\factura\frmPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\factura\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\_detallefacturacion\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\frmCajaDiaria.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCajaDiaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\operacion\_reciboterapeuta\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipooperacion\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipooperacion\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\sintoma\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\sintoma\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tiposintoma\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tiposintoma\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\documento\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\documento\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\evento\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\evento\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipofestivo\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tipofestivo\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\extpaciente\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\festivo\frmEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\producto\productodetalle\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\producto\productodetalle\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\producto\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\producto\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\laboratorio\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\laboratorio\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\estadocita\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\estadocita\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\paciente\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\paciente\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\empleado\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\empleado\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tarifa\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\tarifa\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\estadocivil\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\estadocivil\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\terapia\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\terapia\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\sala\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\sala\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_acercade\frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_contabilizar\frmContabilizar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContabilizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_importacion\frmImportacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmImportacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_principal\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_resumenfiscal\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\_splash\frmSplash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\controls\Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\controls\DayView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DayView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\controls\MonthCalendar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MonthCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\controls\PictureBox.resx">
+      <DependentUpon>PictureBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\controls\TextEditor.resx">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\frm\BaseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\frm\consulta\QueryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\frm\edicion\EditForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\frm\impresion\PrintForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_template\frm\principal\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_test\frmTest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="_common\cache.cs" />
+    <Compile Include="_common\constantes\format.cs" />
+    <Compile Include="_common\constantes\messages.cs" />
+    <Compile Include="_common\funciones\Convert.cs" />
+    <Compile Include="_common\secciones\FontAgendaSection.cs" />
+    <Compile Include="_common\secciones\ImportacionSection.cs" />
+    <Compile Include="_template\controls\Agenda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_template\controls\CalCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_template\controls\DayView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_template\controls\MonthCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_template\controls\OwnOffice12Renderer.cs" />
+    <Compile Include="_template\controls\PictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_template\controls\RichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_template\controls\TextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_template\frm\BaseCtrl.cs" />
+    <Compile Include="_template\frm\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_template\frm\consulta\ctrl\QueryCtrl.cs" />
+    <Compile Include="_template\frm\consulta\QueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_template\frm\edicion\ctrl\EditCtrl.cs" />
+    <Compile Include="_template\frm\edicion\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_template\frm\impresion\ctrl\PrintCtrl.cs" />
+    <Compile Include="_template\frm\impresion\PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_template\frm\principal\ctrl\MainCtrl.cs" />
+    <Compile Include="_template\frm\principal\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_template\_common\messages.cs" />
+    <Compile Include="_test\frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gesClinica.lib.bl\gesClinica.lib.bl.csproj">
+      <Project>{26CD0944-60E2-4878-A179-2B3E5F558ADD}</Project>
+      <Name>gesClinica.lib.bl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gesClinica.lib.common\gesClinica.lib.common.csproj">
+      <Project>{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}</Project>
+      <Name>gesClinica.lib.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gesClinica.lib.vo\gesClinica.lib.vo.csproj">
+      <Project>{B95F238C-8B83-41F0-9D42-87B4E063215F}</Project>
+      <Name>gesClinica.lib.vo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\week.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\month.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50px-Yin_yang.png" />
+    <None Include="Resources\yinyang-ico.gif" />
+    <None Include="Resources\Yin Yan.bmp" />
+    <Content Include="50px-Yin_yang.ico" />
+    <None Include="Resources\search16x16.png" />
+    <None Include="Resources\PrintHS.png" />
+    <None Include="_doc\manual de usuario\agenda\01 nueva_cita.doc" />
+    <None Include="_doc\manual de usuario\agenda\02 atender_cita.doc" />
+    <None Include="_doc\manual de usuario\caja\01 generar_recibo.doc" />
+    <Content Include="_doc\manual de usuario\agenda\images\atender_cita01.png" />
+    <Content Include="_doc\manual de usuario\agenda\images\atender_cita02.png" />
+    <Content Include="_doc\manual de usuario\agenda\images\atender_cita021.png" />
+    <Content Include="_doc\manual de usuario\agenda\images\nueva_cita01.png" />
+    <Content Include="_doc\manual de usuario\agenda\images\nueva_cita02.png" />
+    <Content Include="_doc\manual de usuario\agenda\images\nueva_cita03.png" />
+    <Content Include="_template\controls\images\AlignTableCellMiddleCenterHS.png" />
+    <Content Include="_template\controls\images\AlignTableCellMiddleLeftJustHS.PNG" />
+    <Content Include="_template\controls\images\AlignTableCellMiddleRightHS.png" />
+    <Content Include="_template\controls\images\boldhs.png" />
+    <Content Include="_template\controls\images\Color_fontHS.png" />
+    <Content Include="_template\controls\images\CopyHS.png" />
+    <Content Include="_template\controls\images\CutHS.png" />
+    <Content Include="_template\controls\images\Edit_RedoHS.png" />
+    <Content Include="_template\controls\images\Edit_UndoHS.png" />
+    <Content Include="_template\controls\images\FontDialogHS.png" />
+    <Content Include="_template\controls\images\FontHS.png" />
+    <Content Include="_template\controls\images\ItalicHS.png" />
+    <Content Include="_template\controls\images\openfolderHS.png" />
+    <Content Include="_template\controls\images\PasteHS.png" />
+    <Content Include="_template\controls\images\PrintHS.png" />
+    <Content Include="_template\controls\images\PrintPreviewHS.png" />
+    <Content Include="_template\controls\images\PrintSetupHS.png" />
+    <Content Include="_template\controls\images\saveHS.png" />
+    <Content Include="_template\controls\images\Undo_Redo.png" />
+    <Content Include="_template\_images\50px-Yin_yang.ico" />
+    <Content Include="_template\_images\50px-Yin_yang.png" />
+    <Content Include="_template\_images\logo_nuevo.ico" />
+    <Content Include="_template\_images\logo_nuevo_ico.png" />
+    <Content Include="_template\_images\tao_logo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_template\_images\tao_logo_nuevo_peque_con.jpg" />
+    <Content Include="_template\_images\tao_logo_nuevo_peque_sin.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+    <Folder Include="_data\" />
+    <Folder Include="_doc\manual de usuario\caja\images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

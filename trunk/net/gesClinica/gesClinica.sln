@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gesClinica.lib.vo", "gesClinica.lib.vo\gesClinica.lib.vo.csproj", "{B95F238C-8B83-41F0-9D42-87B4E063215F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gesClinica.lib.dao", "gesClinica.lib.dao\gesClinica.lib.dao.csproj", "{4863D8E3-041C-47E3-BE4A-E9475411F492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gesClinica.lib.bl", "gesClinica.lib.bl\gesClinica.lib.bl.csproj", "{26CD0944-60E2-4878-A179-2B3E5F558ADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gesClinica.lib.common", "gesClinica.lib.common\gesClinica.lib.common.csproj", "{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gesClinica.app.pc", "gesClinica.app.pc\gesClinica.app.pc.csproj", "{94330445-2440-4251-BEDA-E51D71F417DD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "gesClinica.app.pc.setup", "gesClinica.app.pc.setup\gesClinica.app.pc.setup.vdproj", "{AA213541-75A3-46A8-9E0E-A349F8B387B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B95F238C-8B83-41F0-9D42-87B4E063215F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95F238C-8B83-41F0-9D42-87B4E063215F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95F238C-8B83-41F0-9D42-87B4E063215F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95F238C-8B83-41F0-9D42-87B4E063215F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4863D8E3-041C-47E3-BE4A-E9475411F492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4863D8E3-041C-47E3-BE4A-E9475411F492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4863D8E3-041C-47E3-BE4A-E9475411F492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4863D8E3-041C-47E3-BE4A-E9475411F492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26CD0944-60E2-4878-A179-2B3E5F558ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26CD0944-60E2-4878-A179-2B3E5F558ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26CD0944-60E2-4878-A179-2B3E5F558ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26CD0944-60E2-4878-A179-2B3E5F558ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94330445-2440-4251-BEDA-E51D71F417DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94330445-2440-4251-BEDA-E51D71F417DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94330445-2440-4251-BEDA-E51D71F417DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94330445-2440-4251-BEDA-E51D71F417DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA213541-75A3-46A8-9E0E-A349F8B387B4}.Debug|Any CPU.ActiveCfg = Debug
+		{AA213541-75A3-46A8-9E0E-A349F8B387B4}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

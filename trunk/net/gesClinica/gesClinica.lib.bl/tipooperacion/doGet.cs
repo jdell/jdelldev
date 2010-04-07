@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using gesClinica.lib.vo;
+
+namespace gesClinica.lib.bl.tipooperacion
+{
+    public class doGet : gesClinica.lib.bl._template.generalActionBL
+    {
+        TipoOperacion _tipooperacion;
+        public doGet(TipoOperacion tipooperacion)
+        {
+            _tipooperacion = tipooperacion;
+        }
+        new public TipoOperacion execute()
+        {
+            return (TipoOperacion)base.execute();
+        }
+        protected override object accion()
+        {
+            if (_tipooperacion == null)
+                throw new _exceptions.common.NullReferenceException(typeof(TipoOperacion), this.GetType().Name);
+
+            gesClinica.lib.dao.tipooperacion.fachada tipooperacionFacade = new gesClinica.lib.dao.tipooperacion.fachada();
+            return tipooperacionFacade.doGet(_tipooperacion);
+        }
+    }
+}

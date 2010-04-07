@@ -1,0 +1,579 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4863D8E3-041C-47E3-BE4A-E9475411F492}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gesClinica.lib.dao</RootNamespace>
+    <AssemblyName>gesClinica.lib.dao</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="framework.crypto, Version=0.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.exceptions, Version=0.0.8.0, Culture=neutral, PublicKeyToken=d0dfd29390566188, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.util, Version=0.0.8.0, Culture=neutral, PublicKeyToken=43ecb7b0d9a31afb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anexo\action\doGetAllByCita.cs" />
+    <Compile Include="apunte\action\doGetAllBySubcuentaEjercicioFechas.cs" />
+    <Compile Include="apunte\action\doGetAllByLista.cs" />
+    <Compile Include="apunte\action\doGetAllByEjercicioFechas.cs" />
+    <Compile Include="apunte\action\doGetAllBySubCuenta.cs" />
+    <Compile Include="apunte\action\doGetAllByAsiento.cs" />
+    <Compile Include="apunte\action\doGetAllAmortizaciones.cs" />
+    <Compile Include="apunte\action\doGetAllFacturasEmitidas.cs" />
+    <Compile Include="apunte\action\doGetAllFacturasRecibidas.cs" />
+    <Compile Include="asiento\action\doDeleteFromFactura.cs" />
+    <Compile Include="asiento\action\doRenumerarFacturasRecibidas.cs" />
+    <Compile Include="asiento\action\doRenumerarAsientos.cs" />
+    <Compile Include="asiento\action\doAddFromFactura.cs" />
+    <Compile Include="asiento\action\doGetAllByEjercicio.cs" />
+    <Compile Include="cita\action\doUpdateFacturada.cs" />
+    <Compile Include="cita\action\doGetAllByPacienteAndEmpleado.cs" />
+    <Compile Include="cita\action\doGetAllByFechaAndNoFacturada.cs" />
+    <Compile Include="cita\action\doGetAllByFechaAndPaciente.cs" />
+    <Compile Include="cita\action\doGetAllByPaciente.cs" />
+    <Compile Include="cita\action\doAddProgramada.cs" />
+    <Compile Include="cita\action\doUpdateNotas.cs" />
+    <Compile Include="cita\action\doUpdateDatosClinicos.cs" />
+    <Compile Include="cita\action\doGetAllByFechaAndSala.cs" />
+    <Compile Include="cita\action\doAdd.cs" />
+    <Compile Include="cita\action\doDelete.cs" />
+    <Compile Include="cita\action\doGet.cs" />
+    <Compile Include="cita\action\doGetAll.cs" />
+    <Compile Include="cita\action\doUpdate.cs" />
+    <Compile Include="cita\dao\citaDAO.cs" />
+    <Compile Include="cita\fachada.cs" />
+    <Compile Include="anexo\action\doAdd.cs" />
+    <Compile Include="anexo\action\doDelete.cs" />
+    <Compile Include="anexo\action\doGet.cs" />
+    <Compile Include="anexo\action\doGetAll.cs" />
+    <Compile Include="anexo\action\doUpdate.cs" />
+    <Compile Include="anexo\dao\anexoDAO.cs" />
+    <Compile Include="anexo\fachada.cs" />
+    <Compile Include="componente\action\doAdd.cs" />
+    <Compile Include="componente\action\doDelete.cs" />
+    <Compile Include="componente\action\doGet.cs" />
+    <Compile Include="componente\action\doGetAll.cs" />
+    <Compile Include="componente\action\doUpdate.cs" />
+    <Compile Include="componente\dao\componenteDAO.cs" />
+    <Compile Include="componente\fachada.cs" />
+    <Compile Include="asiento\action\doAdd.cs" />
+    <Compile Include="asiento\action\doDelete.cs" />
+    <Compile Include="asiento\action\doGet.cs" />
+    <Compile Include="asiento\action\doGetAll.cs" />
+    <Compile Include="asiento\action\doUpdate.cs" />
+    <Compile Include="asiento\dao\asientoDAO.cs" />
+    <Compile Include="asiento\fachada.cs" />
+    <Compile Include="apunte\action\doAdd.cs" />
+    <Compile Include="apunte\action\doDelete.cs" />
+    <Compile Include="apunte\action\doGet.cs" />
+    <Compile Include="apunte\action\doGetAll.cs" />
+    <Compile Include="apunte\action\doUpdate.cs" />
+    <Compile Include="apunte\dao\apunteDAO.cs" />
+    <Compile Include="apunte\fachada.cs" />
+    <Compile Include="configuracion\action\doGetByClaseYClave.cs" />
+    <Compile Include="configuracion\action\doGetByClase.cs" />
+    <Compile Include="contador\action\doAdd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\action\doDelete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\action\doGet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\action\doGetAll.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\action\doGetAllByEmpresa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\action\doUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\dao\contadorDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\fachada.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="configuracion\action\doAdd.cs" />
+    <Compile Include="configuracion\action\doDelete.cs" />
+    <Compile Include="configuracion\action\doGet.cs" />
+    <Compile Include="configuracion\action\doGetAll.cs" />
+    <Compile Include="configuracion\action\doUpdate.cs" />
+    <Compile Include="configuracion\dao\configuracionDAO.cs" />
+    <Compile Include="configuracion\fachada.cs" />
+    <Compile Include="factura\action\doGetAllContabilizadaByFechas.cs" />
+    <Compile Include="paciente\action\doGetAviones.cs" />
+    <Compile Include="paciente\action\doUpdateNotas.cs" />
+    <Compile Include="terapia\action\doGetDependiente.cs" />
+    <Compile Include="terapia\action\doUnBind.cs" />
+    <Compile Include="terapia\action\doBind.cs" />
+    <Compile Include="terapia\action\doUpdateTipoTerapia.cs" />
+    <Compile Include="tipoterapia\action\doAdd.cs" />
+    <Compile Include="tipoterapia\action\doDelete.cs" />
+    <Compile Include="tipoterapia\action\doGet.cs" />
+    <Compile Include="tipoterapia\action\doGetAll.cs" />
+    <Compile Include="tipoterapia\action\doUpdate.cs" />
+    <Compile Include="tipoterapia\dao\tipoterapiaDAO.cs" />
+    <Compile Include="tipoterapia\fachada.cs" />
+    <Compile Include="estadoevento\action\doAdd.cs" />
+    <Compile Include="estadoevento\action\doDelete.cs" />
+    <Compile Include="estadoevento\action\doGet.cs" />
+    <Compile Include="estadoevento\action\doGetAll.cs" />
+    <Compile Include="estadoevento\action\doUpdate.cs" />
+    <Compile Include="estadoevento\dao\estadoeventoDAO.cs" />
+    <Compile Include="estadoevento\fachada.cs" />
+    <Compile Include="ejercicio\action\doAbrir.cs" />
+    <Compile Include="ejercicio\action\doCerrarYAbrir.cs" />
+    <Compile Include="ejercicio\action\doCerrar.cs" />
+    <Compile Include="tercero\action\doGetBySubCuenta.cs" />
+    <Compile Include="tercero\action\doAdd.cs" />
+    <Compile Include="tercero\action\doDelete.cs" />
+    <Compile Include="tercero\action\doGet.cs" />
+    <Compile Include="tercero\action\doGetAll.cs" />
+    <Compile Include="tercero\action\doUpdate.cs" />
+    <Compile Include="tercero\dao\terceroDAO.cs" />
+    <Compile Include="tercero\fachada.cs" />
+    <Compile Include="empleado\action\doGetAllPorEmpresa.cs" />
+    <Compile Include="factura\action\doGetAllByEjercicio.cs" />
+    <Compile Include="factura\action\doGetAllNoContabilizadaByFechas.cs" />
+    <Compile Include="operacion\action\doGetByCita.cs" />
+    <Compile Include="operacion\action\doGetAllByFechaAndEmpresa.cs" />
+    <Compile Include="operacion\action\doGetAllByFechas.cs" />
+    <Compile Include="tipounidad\action\doAdd.cs" />
+    <Compile Include="tipounidad\action\doDelete.cs" />
+    <Compile Include="tipounidad\action\doGet.cs" />
+    <Compile Include="tipounidad\action\doGetAll.cs" />
+    <Compile Include="tipounidad\action\doUpdate.cs" />
+    <Compile Include="tipounidad\dao\tipounidadDAO.cs" />
+    <Compile Include="tipounidad\fachada.cs" />
+    <Compile Include="ejercicio\action\doGetByFecha.cs" />
+    <Compile Include="operacion\action\doGetAllByPaciente .cs" />
+    <Compile Include="paciente\action\doUpdateMuyImportante.cs" />
+    <Compile Include="pago\action\doGetAllByFecha.cs" />
+    <Compile Include="pago\action\doGetAllByOperacion.cs" />
+    <Compile Include="pago\action\doAdd.cs" />
+    <Compile Include="pago\action\doDelete.cs" />
+    <Compile Include="pago\action\doGet.cs" />
+    <Compile Include="pago\action\doGetAll.cs" />
+    <Compile Include="pago\action\doGetAllByFormaPago.cs" />
+    <Compile Include="pago\action\doUpdate.cs" />
+    <Compile Include="pago\dao\pagoDAO.cs" />
+    <Compile Include="pago\fachada.cs" />
+    <Compile Include="formapago\action\doAdd.cs" />
+    <Compile Include="formapago\action\doDelete.cs" />
+    <Compile Include="formapago\action\doGet.cs" />
+    <Compile Include="formapago\action\doGetAll.cs" />
+    <Compile Include="formapago\action\doUpdate.cs" />
+    <Compile Include="formapago\dao\formapagoDAO.cs" />
+    <Compile Include="formapago\fachada.cs" />
+    <Compile Include="ejercicio\action\doAdd.cs" />
+    <Compile Include="ejercicio\action\doDelete.cs" />
+    <Compile Include="ejercicio\action\doGet.cs" />
+    <Compile Include="ejercicio\action\doGetAll.cs" />
+    <Compile Include="ejercicio\action\doUpdate.cs" />
+    <Compile Include="ejercicio\dao\ejercicioDAO.cs" />
+    <Compile Include="ejercicio\fachada.cs" />
+    <Compile Include="empresa\action\doAdd.cs" />
+    <Compile Include="empresa\action\doDelete.cs" />
+    <Compile Include="empresa\action\doGet.cs" />
+    <Compile Include="empresa\action\doGetAll.cs" />
+    <Compile Include="empresa\action\doUpdate.cs" />
+    <Compile Include="empresa\dao\empresaDAO.cs" />
+    <Compile Include="empresa\fachada.cs" />
+    <Compile Include="indicacion\action\doGetAllInContraIndicacion.cs" />
+    <Compile Include="indicacion\action\doGetAllOutContraIndicacion.cs" />
+    <Compile Include="indicacion\action\doGetAllInIndicacion.cs" />
+    <Compile Include="indicacion\action\doGetAllOutIndicacion.cs" />
+    <Compile Include="operacion\action\doGetAllByTipo.cs" />
+    <Compile Include="producto\action\doGetAllBy.cs" />
+    <Compile Include="subcuenta\action\doGetAllByLista.cs" />
+    <Compile Include="tipodocumento\action\doAdd.cs" />
+    <Compile Include="tipodocumento\action\doDelete.cs" />
+    <Compile Include="tipodocumento\action\doGet.cs" />
+    <Compile Include="tipodocumento\action\doGetAll.cs" />
+    <Compile Include="tipodocumento\action\doUpdate.cs" />
+    <Compile Include="tipodocumento\dao\tipodocumentoDAO.cs" />
+    <Compile Include="tipodocumento\fachada.cs" />
+    <Compile Include="indicacion\action\doAdd.cs" />
+    <Compile Include="indicacion\action\doDelete.cs" />
+    <Compile Include="indicacion\action\doGet.cs" />
+    <Compile Include="indicacion\action\doGetAll.cs" />
+    <Compile Include="indicacion\action\doUpdate.cs" />
+    <Compile Include="indicacion\dao\indicacionDAO.cs" />
+    <Compile Include="indicacion\fachada.cs" />
+    <Compile Include="subcuenta\action\doAdd.cs" />
+    <Compile Include="subcuenta\action\doDelete.cs" />
+    <Compile Include="subcuenta\action\doGet.cs" />
+    <Compile Include="subcuenta\action\doGetAll.cs" />
+    <Compile Include="subcuenta\action\doUpdate.cs" />
+    <Compile Include="subcuenta\dao\subcuentaDAO.cs" />
+    <Compile Include="subcuenta\fachada.cs" />
+    <Compile Include="_events\gesClinicaEventArgs.cs" />
+    <Compile Include="_events\ProgressEventArgs.cs" />
+    <Compile Include="_importacion\actionImport.cs" />
+    <Compile Include="_importacion\componente\action\doImport.cs" />
+    <Compile Include="_importacion\componente\action\doGetAll.cs" />
+    <Compile Include="_importacion\componente\dao\componenteDAO.cs" />
+    <Compile Include="_importacion\componente\fachada.cs" />
+    <Compile Include="_importacion\club\action\doGetAll.cs" />
+    <Compile Include="_importacion\club\action\doImport.cs" />
+    <Compile Include="_importacion\club\dao\clubDAO.cs" />
+    <Compile Include="_importacion\club\fachada.cs" />
+    <Compile Include="_importacion\actividad\action\doGetAll.cs" />
+    <Compile Include="_importacion\actividad\action\doImport.cs" />
+    <Compile Include="_importacion\actividad\dao\actividadDAO.cs" />
+    <Compile Include="_importacion\actividad\fachada.cs" />
+    <Compile Include="_importacion\caja\action\doGetAll.cs" />
+    <Compile Include="_importacion\caja\action\doImport.cs" />
+    <Compile Include="_importacion\caja\dao\cajaDAO.cs" />
+    <Compile Include="_importacion\caja\fachada.cs" />
+    <Compile Include="_importacion\apunte\action\doGetAll.cs" />
+    <Compile Include="_importacion\apunte\action\doImport.cs" />
+    <Compile Include="_importacion\apunte\dao\apunteDAO.cs" />
+    <Compile Include="_importacion\apunte\fachada.cs" />
+    <Compile Include="_importacion\relacion\action\doDeleteAllDataBaseTerceros.cs" />
+    <Compile Include="_importacion\tercero\action\doGetAll.cs" />
+    <Compile Include="_importacion\tercero\action\doImport.cs" />
+    <Compile Include="_importacion\tercero\dao\terceroDAO.cs" />
+    <Compile Include="_importacion\tercero\fachada.cs" />
+    <Compile Include="_importacion\documento\action\doGetAll.cs" />
+    <Compile Include="_importacion\documento\action\doImport.cs" />
+    <Compile Include="_importacion\documento\dao\documentoDAO.cs" />
+    <Compile Include="_importacion\documento\fachada.cs" />
+    <Compile Include="_importacion\tabla\action\doCheckIfExists.cs" />
+    <Compile Include="_importacion\tabla\action\doAdd.cs" />
+    <Compile Include="_importacion\tabla\action\doDelete.cs" />
+    <Compile Include="_importacion\tabla\action\doGet.cs" />
+    <Compile Include="_importacion\tabla\action\doGetAll.cs" />
+    <Compile Include="_importacion\tabla\action\doUpdate.cs" />
+    <Compile Include="_importacion\tabla\dao\tablaDAO.cs" />
+    <Compile Include="_importacion\tabla\fachada.cs" />
+    <Compile Include="_importacion\ejercicio\action\doGetAll.cs" />
+    <Compile Include="_importacion\ejercicio\action\doImport.cs" />
+    <Compile Include="_importacion\ejercicio\dao\ejercicioDAO.cs" />
+    <Compile Include="_importacion\ejercicio\fachada.cs" />
+    <Compile Include="_importacion\receta\action\doGetAll.cs" />
+    <Compile Include="_importacion\receta\action\doImport.cs" />
+    <Compile Include="_importacion\receta\dao\recetaDAO.cs" />
+    <Compile Include="_importacion\receta\fachada.cs" />
+    <Compile Include="_importacion\visita\action\doGetAll.cs" />
+    <Compile Include="_importacion\visita\action\doImport.cs" />
+    <Compile Include="_importacion\visita\dao\visitaDAO.cs" />
+    <Compile Include="_importacion\visita\fachada.cs" />
+    <Compile Include="_importacion\relprocom\action\doGetAll.cs" />
+    <Compile Include="_importacion\relprocom\action\doImport.cs" />
+    <Compile Include="_importacion\relprocom\dao\relprocomDAO.cs" />
+    <Compile Include="_importacion\relprocom\fachada.cs" />
+    <Compile Include="_importacion\indicacion\action\doGetAllByProductoCIn.cs" />
+    <Compile Include="_importacion\indicacion\action\doGetAllByProductoIn.cs" />
+    <Compile Include="_importacion\tipocaja\action\doGetAll.cs" />
+    <Compile Include="_importacion\tipocaja\action\doImport.cs" />
+    <Compile Include="_importacion\tipocaja\dao\tipocajaDAO.cs" />
+    <Compile Include="_importacion\tipocaja\fachada.cs" />
+    <Compile Include="_importacion\producto\action\doGetAll.cs" />
+    <Compile Include="_importacion\producto\action\doImport.cs" />
+    <Compile Include="_importacion\producto\dao\productoDAO.cs" />
+    <Compile Include="_importacion\producto\fachada.cs" />
+    <Compile Include="_importacion\ginecologia\action\doGetAll.cs" />
+    <Compile Include="_importacion\ginecologia\action\doImport.cs" />
+    <Compile Include="_importacion\ginecologia\dao\ginecologiaDAO.cs" />
+    <Compile Include="_importacion\ginecologia\fachada.cs" />
+    <Compile Include="_importacion\terapeuta\action\doGetAll.cs" />
+    <Compile Include="_importacion\terapeuta\action\doImport.cs" />
+    <Compile Include="_importacion\terapeuta\dao\terapeutaDAO.cs" />
+    <Compile Include="_importacion\terapeuta\fachada.cs" />
+    <Compile Include="_importacion\paciente\action\doGetAll.cs" />
+    <Compile Include="_importacion\paciente\action\doImport.cs" />
+    <Compile Include="_importacion\paciente\dao\pacienteDAO.cs" />
+    <Compile Include="_importacion\paciente\fachada.cs" />
+    <Compile Include="_importacion\relacion\action\doDeleteAllDataBase.cs" />
+    <Compile Include="_importacion\subcuenta\action\doGetAll.cs" />
+    <Compile Include="_importacion\subcuenta\action\doImport.cs" />
+    <Compile Include="_importacion\subcuenta\dao\subcuentaDAO.cs" />
+    <Compile Include="_importacion\subcuenta\fachada.cs" />
+    <Compile Include="_importacion\tipodocumento\action\doGetAll.cs" />
+    <Compile Include="_importacion\tipodocumento\action\doImport.cs" />
+    <Compile Include="_importacion\tipodocumento\dao\tipodocumentoDAO.cs" />
+    <Compile Include="_importacion\tipodocumento\fachada.cs" />
+    <Compile Include="_importacion\laboratorio\action\doGetAll.cs" />
+    <Compile Include="_importacion\laboratorio\action\doImport.cs" />
+    <Compile Include="_importacion\laboratorio\dao\laboratorioDAO.cs" />
+    <Compile Include="_importacion\laboratorio\fachada.cs" />
+    <Compile Include="_importacion\indicacion\action\doGetAll.cs" />
+    <Compile Include="_importacion\indicacion\action\doImport.cs" />
+    <Compile Include="_importacion\indicacion\dao\indicacionDAO.cs" />
+    <Compile Include="_importacion\indicacion\fachada.cs" />
+    <Compile Include="_importacion\facade.cs" />
+    <Compile Include="_importacion\relacion\action\doAdd.cs" />
+    <Compile Include="_importacion\relacion\action\doDelete.cs" />
+    <Compile Include="_importacion\relacion\action\doGet.cs" />
+    <Compile Include="_importacion\relacion\action\doGetAll.cs" />
+    <Compile Include="_importacion\relacion\action\doUpdate.cs" />
+    <Compile Include="_importacion\relacion\dao\relacionDAO.cs" />
+    <Compile Include="_importacion\relacion\fachada.cs" />
+    <Compile Include="factura\action\doGetAllByFecha.cs" />
+    <Compile Include="factura\action\doGetByOperacion.cs" />
+    <Compile Include="factura\action\doGetAllByEmpleado.cs" />
+    <Compile Include="factura\action\doAdd.cs" />
+    <Compile Include="factura\action\doDelete.cs" />
+    <Compile Include="factura\action\doGet.cs" />
+    <Compile Include="factura\action\doGetAll.cs" />
+    <Compile Include="factura\action\doUpdate.cs" />
+    <Compile Include="factura\dao\facturaDAO.cs" />
+    <Compile Include="factura\fachada.cs" />
+    <Compile Include="operacion\action\doGetAllByFechaAndEmpleado.cs" />
+    <Compile Include="operacion\action\doCheckIfExists.cs" />
+    <Compile Include="operacion\action\doGetAllByFecha.cs" />
+    <Compile Include="operacion\action\doAdd.cs" />
+    <Compile Include="operacion\action\doDelete.cs" />
+    <Compile Include="operacion\action\doGet.cs" />
+    <Compile Include="operacion\action\doGetAll.cs" />
+    <Compile Include="operacion\action\doUpdate.cs" />
+    <Compile Include="operacion\dao\operacionDAO.cs" />
+    <Compile Include="operacion\fachada.cs" />
+    <Compile Include="tipooperacion\action\doAdd.cs" />
+    <Compile Include="tipooperacion\action\doDelete.cs" />
+    <Compile Include="tipooperacion\action\doGet.cs" />
+    <Compile Include="tipooperacion\action\doGetAll.cs" />
+    <Compile Include="tipooperacion\action\doUpdate.cs" />
+    <Compile Include="tipooperacion\dao\tipooperacionDAO.cs" />
+    <Compile Include="tipooperacion\fachada.cs" />
+    <Compile Include="descuento\action\doGetAllByPaciente.cs" />
+    <Compile Include="descuento\action\doAdd.cs" />
+    <Compile Include="descuento\action\doDelete.cs" />
+    <Compile Include="descuento\action\doGet.cs" />
+    <Compile Include="descuento\action\doGetAll.cs" />
+    <Compile Include="descuento\action\doUpdate.cs" />
+    <Compile Include="descuento\dao\descuentoDAO.cs" />
+    <Compile Include="descuento\fachada.cs" />
+    <Compile Include="sintoma\action\doGetAllByTipoSintoma.cs" />
+    <Compile Include="sintoma\action\doAdd.cs" />
+    <Compile Include="sintoma\action\doDelete.cs" />
+    <Compile Include="sintoma\action\doGet.cs" />
+    <Compile Include="sintoma\action\doGetAll.cs" />
+    <Compile Include="sintoma\action\doUpdate.cs" />
+    <Compile Include="sintoma\dao\sintomaDAO.cs" />
+    <Compile Include="sintoma\fachada.cs" />
+    <Compile Include="tiposintoma\action\doAdd.cs" />
+    <Compile Include="tiposintoma\action\doDelete.cs" />
+    <Compile Include="tiposintoma\action\doGet.cs" />
+    <Compile Include="tiposintoma\action\doGetAll.cs" />
+    <Compile Include="tiposintoma\action\doUpdate.cs" />
+    <Compile Include="tiposintoma\dao\tiposintomaDAO.cs" />
+    <Compile Include="tiposintoma\fachada.cs" />
+    <Compile Include="documento\action\doAdd.cs" />
+    <Compile Include="documento\action\doDelete.cs" />
+    <Compile Include="documento\action\doGet.cs" />
+    <Compile Include="documento\action\doGetAll.cs" />
+    <Compile Include="documento\action\doUpdate.cs" />
+    <Compile Include="documento\dao\documentoDAO.cs" />
+    <Compile Include="documento\fachada.cs" />
+    <Compile Include="evento\action\doGetAllByEmpleadoYFecha.cs" />
+    <Compile Include="festivo\action\doAdd.cs" />
+    <Compile Include="festivo\action\doDelete.cs" />
+    <Compile Include="festivo\action\doGet.cs" />
+    <Compile Include="festivo\action\doGetAll.cs" />
+    <Compile Include="festivo\action\doUpdate.cs" />
+    <Compile Include="festivo\dao\festivoDAO.cs" />
+    <Compile Include="festivo\fachada.cs" />
+    <Compile Include="terapia\action\doGetAllOut.cs" />
+    <Compile Include="terapia\action\doGetAllIn.cs" />
+    <Compile Include="tipofestivo\action\doAdd.cs" />
+    <Compile Include="tipofestivo\action\doDelete.cs" />
+    <Compile Include="tipofestivo\action\doGet.cs" />
+    <Compile Include="tipofestivo\action\doGetAll.cs" />
+    <Compile Include="tipofestivo\action\doUpdate.cs" />
+    <Compile Include="tipofestivo\dao\tipofestivoDAO.cs" />
+    <Compile Include="tipofestivo\fachada.cs" />
+    <Compile Include="empleado\action\doGetByLogin.cs" />
+    <Compile Include="evento\action\doGetAllByEmpleado.cs" />
+    <Compile Include="evento\action\doAdd.cs" />
+    <Compile Include="evento\action\doDelete.cs" />
+    <Compile Include="evento\action\doGet.cs" />
+    <Compile Include="evento\action\doGetAll.cs" />
+    <Compile Include="evento\action\doUpdate.cs" />
+    <Compile Include="evento\dao\eventoDAO.cs" />
+    <Compile Include="evento\fachada.cs" />
+    <Compile Include="recetadetalle\action\doAdd.cs" />
+    <Compile Include="recetadetalle\action\doDelete.cs" />
+    <Compile Include="recetadetalle\action\doGet.cs" />
+    <Compile Include="recetadetalle\action\doGetAll.cs" />
+    <Compile Include="recetadetalle\action\doGetAllByReceta.cs" />
+    <Compile Include="recetadetalle\action\doUpdate.cs" />
+    <Compile Include="recetadetalle\dao\recetadetalleDAO.cs" />
+    <Compile Include="recetadetalle\fachada.cs" />
+    <Compile Include="receta\action\doAdd.cs" />
+    <Compile Include="receta\action\doDelete.cs" />
+    <Compile Include="receta\action\doGet.cs" />
+    <Compile Include="receta\action\doGetAll.cs" />
+    <Compile Include="receta\action\doGetAllByCita.cs" />
+    <Compile Include="receta\action\doUpdate.cs" />
+    <Compile Include="receta\dao\recetaDAO.cs" />
+    <Compile Include="receta\fachada.cs" />
+    <Compile Include="extpaciente\action\doGetByPaciente.cs" />
+    <Compile Include="extpaciente\action\doAdd.cs" />
+    <Compile Include="extpaciente\action\doDelete.cs" />
+    <Compile Include="extpaciente\action\doGet.cs" />
+    <Compile Include="extpaciente\action\doGetAll.cs" />
+    <Compile Include="extpaciente\action\doUpdate.cs" />
+    <Compile Include="extpaciente\dao\extpacienteDAO.cs" />
+    <Compile Include="extpaciente\fachada.cs" />
+    <Compile Include="productodetalle\action\doGetAllByProducto.cs" />
+    <Compile Include="productodetalle\action\doAdd.cs" />
+    <Compile Include="productodetalle\action\doDelete.cs" />
+    <Compile Include="productodetalle\action\doGet.cs" />
+    <Compile Include="productodetalle\action\doGetAll.cs" />
+    <Compile Include="productodetalle\action\doUpdate.cs" />
+    <Compile Include="productodetalle\dao\productodetalleDAO.cs" />
+    <Compile Include="productodetalle\fachada.cs" />
+    <Compile Include="producto\action\doAdd.cs" />
+    <Compile Include="producto\action\doDelete.cs" />
+    <Compile Include="producto\action\doGet.cs" />
+    <Compile Include="producto\action\doGetAll.cs" />
+    <Compile Include="producto\action\doUpdate.cs" />
+    <Compile Include="producto\dao\productoDAO.cs" />
+    <Compile Include="producto\fachada.cs" />
+    <Compile Include="laboratorio\action\doAdd.cs" />
+    <Compile Include="laboratorio\action\doDelete.cs" />
+    <Compile Include="laboratorio\action\doGet.cs" />
+    <Compile Include="laboratorio\action\doGetAll.cs" />
+    <Compile Include="laboratorio\action\doUpdate.cs" />
+    <Compile Include="laboratorio\dao\laboratorioDAO.cs" />
+    <Compile Include="laboratorio\fachada.cs" />
+    <Compile Include="empleado\action\doGetAllTerapeutas.cs" />
+    <Compile Include="estadocita\action\doAdd.cs" />
+    <Compile Include="estadocita\action\doDelete.cs" />
+    <Compile Include="estadocita\action\doGet.cs" />
+    <Compile Include="estadocita\action\doGetAll.cs" />
+    <Compile Include="estadocita\action\doUpdate.cs" />
+    <Compile Include="estadocita\dao\estadocitaDAO.cs" />
+    <Compile Include="estadocita\fachada.cs" />
+    <Compile Include="paciente\action\doAdd.cs" />
+    <Compile Include="paciente\action\doDelete.cs" />
+    <Compile Include="paciente\action\doGet.cs" />
+    <Compile Include="paciente\action\doGetAll.cs" />
+    <Compile Include="paciente\action\doUpdate.cs" />
+    <Compile Include="paciente\dao\pacienteDAO.cs" />
+    <Compile Include="paciente\fachada.cs" />
+    <Compile Include="empleado\action\doAdd.cs" />
+    <Compile Include="empleado\action\doDelete.cs" />
+    <Compile Include="empleado\action\doGet.cs" />
+    <Compile Include="empleado\action\doGetAll.cs" />
+    <Compile Include="empleado\action\doUpdate.cs" />
+    <Compile Include="empleado\dao\empleadoDAO.cs" />
+    <Compile Include="empleado\fachada.cs" />
+    <Compile Include="tarifa\action\doAdd.cs" />
+    <Compile Include="tarifa\action\doDelete.cs" />
+    <Compile Include="tarifa\action\doGet.cs" />
+    <Compile Include="tarifa\action\doGetAll.cs" />
+    <Compile Include="tarifa\action\doUpdate.cs" />
+    <Compile Include="tarifa\dao\tarifaDAO.cs" />
+    <Compile Include="tarifa\fachada.cs" />
+    <Compile Include="estadocivil\action\doAdd.cs" />
+    <Compile Include="estadocivil\action\doDelete.cs" />
+    <Compile Include="estadocivil\action\doGet.cs" />
+    <Compile Include="estadocivil\action\doGetAll.cs" />
+    <Compile Include="estadocivil\action\doUpdate.cs" />
+    <Compile Include="estadocivil\dao\estadocivilDAO.cs" />
+    <Compile Include="estadocivil\fachada.cs" />
+    <Compile Include="terapia\action\doAdd.cs" />
+    <Compile Include="terapia\action\doDelete.cs" />
+    <Compile Include="terapia\action\doGet.cs" />
+    <Compile Include="terapia\action\doGetAll.cs" />
+    <Compile Include="terapia\action\doUpdate.cs" />
+    <Compile Include="terapia\dao\terapiaDAO.cs" />
+    <Compile Include="terapia\fachada.cs" />
+    <Compile Include="sala\action\doDelete.cs" />
+    <Compile Include="sala\action\doAdd.cs" />
+    <Compile Include="sala\action\doGet.cs" />
+    <Compile Include="sala\action\doGetAll.cs" />
+    <Compile Include="sala\action\doUpdate.cs" />
+    <Compile Include="sala\dao\salaDAO.cs" />
+    <Compile Include="sala\fachada.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_common\conexion\tCONEXION.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_common\DAOFactory.cs" />
+    <Compile Include="_common\facade.cs" />
+    <Compile Include="_common\plain\NonTransactionalPlainAction.cs" />
+    <Compile Include="_common\plain\PlainAction.cs" />
+    <Compile Include="_common\plain\PlainActionProcessor.cs" />
+    <Compile Include="_common\plain\TransactionalPlainAction.cs" />
+    <Compile Include="_common\util.cs" />
+    <Compile Include="_template\objectDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gesClinica.lib.common\gesClinica.lib.common.csproj">
+      <Project>{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}</Project>
+      <Name>gesClinica.lib.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gesClinica.lib.vo\gesClinica.lib.vo.csproj">
+      <Project>{B95F238C-8B83-41F0-9D42-87B4E063215F}</Project>
+      <Name>gesClinica.lib.vo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

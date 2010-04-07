@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="gesClinica.lib.vo.EstadoCivil" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EstadoCivil.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAEAABAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.vo.Sala" Collapsed="true">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sala.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAEAABAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.vo.Tarifa" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Tarifa.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAEAABAAAABAAAAAACAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.vo.Terapia" Collapsed="true">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Terapia.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAEABBAAAARAAABAAAAAAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.vo.Cita">
+    <Position X="3.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Cita.cs</FileName>
+      <HashCode>AAABAABIQBAAgAkQAABAAAIAAIAAAAAAAAJAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Empleado" />
+      <Property Name="EstadoCita" />
+      <Property Name="Paciente" />
+      <Property Name="Terapia" />
+      <Property Name="Sala" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="gesClinica.lib.vo.Empleado" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Empleado.cs</FileName>
+      <HashCode>IAAAAAAACAAAgIAGAEBAgAQAAAAAAAAAAACAIAMAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.vo.EstadoCita" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EstadoCita.cs</FileName>
+      <HashCode>AEAAAAAAAAAIgAAEAABAAAABAAAAAAAAAAAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.vo.Paciente" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Paciente.cs</FileName>
+      <HashCode>AAAAQAIABAAAgIAEgIBAgAACAAAAAAAAAAAAIAcAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tarifa" />
+      <Property Name="EstadoCivil" />
+    </ShowAsAssociation>
+  </Class>
+</ClassDiagram>

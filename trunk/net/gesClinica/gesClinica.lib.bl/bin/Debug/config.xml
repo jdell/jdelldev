@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuracion>
+  <App>
+    <seccion name="importacion">
+      <add key="importOldData" value="true" />
+      <add key="ownerPrint" value="false" />
+    </seccion>
+    <seccion name="fontAgenda">
+      <!-- Regular, Bold, Italic -->
+      <add key="styleFontAgenda" value="Bold" />
+      <!-- Tahoma, Microsoft Sans Serif, Verdana, Arial, etc-->
+      <add key="nameFontAgenda" value="Verdana" />
+      <add key="sizeFontAgenda" value="8.25" />
+    </seccion>
+  </App>
+  <common>
+    <seccion name="gesClinicaConfig" >
+      <add key="SerieFacturacion" value="A" />
+      <add key="IVA" value="7" />
+      <add key="HoraEntrada" value="9" />
+      <add key="MinutoEntrada" value="0" />
+      <add key="HoraSalida" value="22" />
+      <add key="MinutoSalida" value="0" />
+      <!-- TimeOutAgenda: Minutos para actualizar la agenda -->
+      <add key="TimeOutAgenda" value="1" />
+      <!-- Salto para la agenda. Por defecto, 10 minutos -->
+      <add key="saltoAgenda" value="10" />
+    </seccion>
+    <seccion name="administracion" >
+      <add key="MasterUser" value="USER;ADMINISTRATOR;JOE" />
+      <add key="SystemUser" value="gesClinica" />
+    </seccion>
+    <seccion name="dataBaseConfig">
+      
+      <!--<add key="parameterPrefix" value="@" />
+      <add key="getIdentity" value="@@IDENTITY" />
+      <add key="getIsNull" value="ISNULL" />
+      <add key="callStoredProcedure" value="EXEC" />-->
+      
+      <add key="parameterPrefix" value="?" />
+      <add key="getIdentity" value="LAST_INSERT_ID()" />
+      <add key="getIsNull" value="IFNULL" />
+      <add key="callStoredProcedure" value="CALL" />
+      
+    </seccion>
+    <seccion name="subcuentas">
+      <!-- Operaciones Contables -->
+      <add key="subcuentasServicio" value="71;72;73;74;75;76;77;78;79" />
+      <add key="subcuentasCliente" value="43" />
+      <add key="subcuentasRetencion" value="473" />
+      <add key="subcuentasOrigen" value="5" />
+      <add key="subcuentasProveedor" value="41" />
+      <add key="subcuentasGasto" value="2;6" />
+      <add key="subcuentasDestino" value="5" />
+      <add key="subcuentasAmortizacionBien" value="22" />
+      <add key="subcuentasAmortizacionGasto" value="682" />
+      <add key="subcuentasMedio" value="5" />
+      <!-- Prestamos -->
+      <add key="subcuentasPrestamoIntereses" value="66301" />
+      <add key="subcuentasPrestamoAmortizacion" value="17001" />
+      <add key="subcuentasPrestamoCuentaCargo" value="57202" />
+      <!-- Sueldos y Salarios -->
+      <add key="subcuentasSueldosSalario" value="640" />
+      <add key="subcuentasSueldosSeguridadSocial" value="642" />
+      <add key="subcuentasSueldosMedioPago" value="5" />
+      <add key="subcuentasSueldosRetencion" value="47500" />
+      <add key="subcuentasSueldosSeguridadSocialAcreedora" value="47601" />
+      <!-- SubCuenta por defecto para los pacientes -->
+      <add key="subcuentasPaciente" value="43001" />
+      <!-- Perdidas y Ganancias -->
+      <add key="subcuentasPerdidasYGanancias" value="12900" />
+    </seccion>
+    <conexiones>
+      <!--<conexion Name="gesClinica" ProviderName="MySql.Data.MySqlClient" ConnectionString="Data Source=192.168.1.121;Initial Catalog=gesclinica;Persist Security Info=True;User ID=gesclinica;password=gesclinica" appRoleName="" appRolePwd=""/>-->
+      <conexion Name="gesClinica" ProviderName="MySql.Data.MySqlClient" ConnectionString="b1e7715ce37e063c7e7b52c56b785d3a2e70eb1790e3f50d89dbe65a4fae7379a9b7b50e2c4715733ff2016f346258dccd4fbbbc020346a1c1ea06ccdd43abf4cf42ebeca10e1e0c80e04a433b9e6595658404752ec1430eb54471ce15d2102dac615e8684c49e6b9ac4ba2297591a17a17d2a9bd8bbf947" appRoleName="" appRolePwd=""/>
+      <!--<conexion Name="oldGesClinica" ProviderName="System.Data.OleDb" ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\_data\Clinica.mdb" appRoleName="" appRolePwd=""/>-->
+      <conexion Name="oldGesClinica" ProviderName="System.Data.OleDb" ConnectionString="8771d01a909ccb70a77c01216717496b38bf4431203f852fb6d19165f29a67761807078043cb7346a3885c03c2d983be067087ab1ce020005fee0d2649f8a846e9088537cf95e3824303e4a1adf36e62" appRoleName="" appRolePwd=""/>
+    </conexiones>
+  </common>
+
+</configuracion>
