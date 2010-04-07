@@ -1,0 +1,15 @@
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\bin\Release\public+domain.dll
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\bin\Release\public+domain.pdb
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\obj\Release\public+domain.dll
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\obj\Release\public+domain.pdb
+\\egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tmp_test\public+domain\public+domain\bin\Release\public+domain.dll
+\\egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tmp_test\public+domain\public+domain\bin\Release\public+domain.pdb
+\\egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tmp_test\public+domain\public+domain\obj\Release\ResolveAssemblyReference.cache
+\\egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tmp_test\public+domain\public+domain\obj\Release\public+domain.dll
+\\egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\tmp_test\public+domain\public+domain\obj\Release\public+domain.pdb
+Z:\dev\tmp_test\public+domain\public+domain\bin\Release\public+domain.dll
+Z:\dev\tmp_test\public+domain\public+domain\bin\Release\public+domain.pdb
+Z:\dev\tmp_test\public+domain\public+domain\obj\Release\ResolveAssemblyReference.cache
+Z:\dev\tmp_test\public+domain\public+domain\obj\Release\public+domain.dll
+Z:\dev\tmp_test\public+domain\public+domain\obj\Release\public+domain.pdb
