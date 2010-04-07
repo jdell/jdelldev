@@ -1,0 +1,1887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="gesClinica.lib.bl._common.cache" Collapsed="true">
+    <Position X="542.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_common\cache.cs</FileName>
+      <HashCode>AAAESgEAACAQAQgCCARAEBACAAAAAgAAAEAgAAgAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._common.constantes.mensaje" Collapsed="true">
+    <Position X="542.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_common\constantes\mensaje.cs</FileName>
+      <HashCode>AAAgAIAAAAAABAAAAQEAAAAAAAAAAAAAAACAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._common.custom.ResumenFacturacion" Collapsed="true">
+    <Position X="544.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_common\custom\ResumenFacturacion.cs</FileName>
+      <HashCode>AAAAAABAGAAAAAiAAAAAABAgAAAAAAAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._common.secciones.AdministracionSection" Collapsed="true">
+    <Position X="541" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_common\secciones\AdministracionSection.cs</FileName>
+      <HashCode>AAAAACAIAAAAAAAAAAAAAEAAAAAAAAAQAACAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._common.secciones.GesClinicaConfigSection" Collapsed="true">
+    <Position X="544.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_common\secciones\GesClinicaConfigSection.cs</FileName>
+      <HashCode>AAEMAgAAIAAEAAAAAQAAAAAAgAAAAQIBAAiEAAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._common.secciones.MantenimientoSection" Collapsed="true">
+    <Position X="541" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_common\secciones\MantenimientoSection.cs</FileName>
+      <HashCode>CAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._common.secciones.SubCuentasSection" Collapsed="true">
+    <Position X="541" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_common\secciones\SubCuentasSection.cs</FileName>
+      <HashCode>AwAAIIQDAQlEIAEIIgCQABQBAIEAAAASAAQAEggGIAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._events.gesClinicaEventArgs" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_events\gesClinicaEventArgs.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._events.ProgressEventArgs" Collapsed="true">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_events\ProgressEventArgs.cs</FileName>
+      <HashCode>AABAAAAAAAAAAAAAAAICAAAAAAAAAAAEAAAAAAgAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.asiento.AsientoDescuadradoException" Collapsed="true">
+    <Position X="14.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\asiento\AsientoDescuadradoException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.common.AccessNotAllowedException" Collapsed="true">
+    <Position X="17" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\common\AccessNotAllowedException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.common.ConfigFileNotFoundException" Collapsed="true">
+    <Position X="19.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\common\ConfigFileNotFoundException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.common.IncorrectFormatConfigFileException" Collapsed="true">
+    <Position X="21.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\common\IncorrectFormatConfigFileException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.common.InitializeCacheException" Collapsed="true">
+    <Position X="23.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\common\InitializeCacheException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.common.NullReferenceException" Collapsed="true">
+    <Position X="26" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\common\NullReferenceException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.common.OutOfServiceException" Collapsed="true">
+    <Position X="1.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\common\OutOfServiceException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.empleado.EmployeeNotEnabledException" Collapsed="true">
+    <Position X="3.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\empleado\EmployeeNotEnabledException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.empleado.EmployeeNotFoundException" Collapsed="true">
+    <Position X="5.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\empleado\EmployeeNotFoundException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.factura.BillScoredException" Collapsed="true">
+    <Position X="8" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\factura\BillScoredException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.gesClinicaException" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\gesClinicaException.cs</FileName>
+      <HashCode>AAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.validatingException" Collapsed="true">
+    <Position X="10.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\validatingException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.paciente.MissingNameException" Collapsed="true">
+    <Position X="10.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\paciente\MissingNameException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._exceptions.paciente.MissingTarifaException" Collapsed="true">
+    <Position X="12.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_exceptions\paciente\MissingTarifaException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._importacion.doEraseALL" Collapsed="true">
+    <Position X="259.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_importacion\doEraseALL.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._importacion.doImportarParte1" Collapsed="true">
+    <Position X="275.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_importacion\doImportarParte1.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._importacion.doImportarParte2" Collapsed="true">
+    <Position X="295.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_importacion\doImportarParte2.cs</FileName>
+      <HashCode>AAEABAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._reports.detallefacturacion.rptDetalleFacturacion" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_reports\detallefacturacion\rptDetalleFacturacion.cs</FileName>
+      <HashCode>AAABAAAAgAAAAAgAACAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._reports.factura.rptFactura" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_reports\factura\rptFactura.cs</FileName>
+      <HashCode>gAAAAAAAgAAAAAAAACAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._reports.Informe" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_reports\Informe.cs</FileName>
+      <HashCode>AAAAAAAAgAAAAAAAACAAIAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._reports.receta.rptReceta" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_reports\receta\rptReceta.cs</FileName>
+      <HashCode>AEAAAAAAgAAAAAAAACAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._reports.reciboterapeuta.rptReciboTerapeuta" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_reports\reciboterapeuta\rptReciboTerapeuta.cs</FileName>
+      <HashCode>AAAAAAAAgAAAAAgAACAAAAAAAAAAAAAwAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._reports.resumenporactividad.rptResumenPorActividad" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_reports\resumenporactividad\rptResumenPorActividad.cs</FileName>
+      <HashCode>AAAAAAAAgAAAAAgAACAAAAACAAAAQAAgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._reports.resumenporterapeuta.rptResumenPorTerapeuta" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_reports\resumenporterapeuta\rptResumenPorTerapeuta.cs</FileName>
+      <HashCode>AAAAAAAAgAAAAAAAACAAAAAAAAAAQAAgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._template.actionBL" Collapsed="true">
+    <Position X="282" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_template\actionBL.cs</FileName>
+      <HashCode>AAAIBABAAAAAAAEAAAAEAAACAAAAAAAQAAAAAAAABgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._template.administrativoActionBL" Collapsed="true">
+    <Position X="88.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_template\administrativoActionBL.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._template.generalActionBL" Collapsed="true">
+    <Position X="285.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_template\generalActionBL.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._template.gerenteActionBL" Collapsed="true">
+    <Position X="425" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_template\gerenteActionBL.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl._template.terapeutaActionBL" Collapsed="true">
+    <Position X="476.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_template\terapeutaActionBL.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.anexo.doAdd" Collapsed="true">
+    <Position X="466.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>anexo\doAdd.cs</FileName>
+      <HashCode>AAgABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.anexo.doDelete" Collapsed="true">
+    <Position X="473.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>anexo\doDelete.cs</FileName>
+      <HashCode>AAgABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.anexo.doGet" Collapsed="true">
+    <Position X="480" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>anexo\doGet.cs</FileName>
+      <HashCode>AAgABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.anexo.doGetAll" Collapsed="true">
+    <Position X="484.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>anexo\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.anexo.doUpdate" Collapsed="true">
+    <Position X="489" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>anexo\doUpdate.cs</FileName>
+      <HashCode>AAgABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.apunte.doAdd" Collapsed="true">
+    <Position X="115.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>apunte\doAdd.cs</FileName>
+      <HashCode>AAAABBAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.apunte.doDelete" Collapsed="true">
+    <Position X="124.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>apunte\doDelete.cs</FileName>
+      <HashCode>AAAABBAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.apunte.doGet" Collapsed="true">
+    <Position X="133.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>apunte\doGet.cs</FileName>
+      <HashCode>AAAABBAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.apunte.doGetAll" Collapsed="true">
+    <Position X="358.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>apunte\doGetAll.cs</FileName>
+      <HashCode>AAAIBAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.apunte.doGetAllAmortizaciones" Collapsed="true">
+    <Position X="381" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>apunte\doGetAllAmortizaciones.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.apunte.doGetAllFacturas" Collapsed="true">
+    <Position X="401.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>apunte\doGetAllFacturas.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAQIAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.apunte.doGetAllMovimientos" Collapsed="true">
+    <Position X="153.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>apunte\doGetAllMovimientos.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAACAAEAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.apunte.doUpdate" Collapsed="true">
+    <Position X="32.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>apunte\doUpdate.cs</FileName>
+      <HashCode>AAAABBAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.asiento.doAdd" Collapsed="true">
+    <Position X="41.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>asiento\doAdd.cs</FileName>
+      <HashCode>AAEIBAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.asiento.doDelete" Collapsed="true">
+    <Position X="50.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>asiento\doDelete.cs</FileName>
+      <HashCode>AAAIBAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.asiento.doGet" Collapsed="true">
+    <Position X="63.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>asiento\doGet.cs</FileName>
+      <HashCode>AAAIBAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.asiento.doGetAll" Collapsed="true">
+    <Position X="210" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>asiento\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.asiento.doGetAllByEjercicio" Collapsed="true">
+    <Position X="228" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>asiento\doGetAllByEjercicio.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.asiento.doUpdate" Collapsed="true">
+    <Position X="84" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>asiento\doUpdate.cs</FileName>
+      <HashCode>AAAIBAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.citaActionBL" Collapsed="true">
+    <Position X="517.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\citaActionBL.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doAdd" Collapsed="true">
+    <Position X="518.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doAddProgramada" Collapsed="true">
+    <Position X="520.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doAddProgramada.cs</FileName>
+      <HashCode>AAAABAAAAAAAAACAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doDelete" Collapsed="true">
+    <Position X="522.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doGet" Collapsed="true">
+    <Position X="525" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doGetAll" Collapsed="true">
+    <Position X="527.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doGetAllPorFechaYNoFacturada" Collapsed="true">
+    <Position X="360.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doGetAllPorFechaYNoFacturada.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doGetAllPorFechaYPaciente" Collapsed="true">
+    <Position X="383.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doGetAllPorFechaYPaciente.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doGetAllPorFechaYSala" Collapsed="true">
+    <Position X="403.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doGetAllPorFechaYSala.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doGetAllPorPaciente" Collapsed="true">
+    <Position X="507" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doGetAllPorPaciente.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAIAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doGetAllPorPacienteYTerapeuta" Collapsed="true">
+    <Position X="509.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doGetAllPorPacienteYTerapeuta.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAgAAAAEAAIAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doUpdate" Collapsed="true">
+    <Position X="511.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doUpdateDatosClinicos" Collapsed="true">
+    <Position X="513.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doUpdateDatosClinicos.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.cita.doUpdateNotas" Collapsed="true">
+    <Position X="516" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>cita\doUpdateNotas.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.componente.doAdd" Collapsed="true">
+    <Position X="212.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>componente\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.componente.doDelete" Collapsed="true">
+    <Position X="230.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>componente\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.componente.doGet" Collapsed="true">
+    <Position X="243.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>componente\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.componente.doGetAll" Collapsed="true">
+    <Position X="261.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>componente\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.componente.doUpdate" Collapsed="true">
+    <Position X="277.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>componente\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.contador.doAdd" Collapsed="true">
+    <Position X="102" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>contador\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.contador.doDelete" Collapsed="true">
+    <Position X="117.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>contador\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.contador.doGet" Collapsed="true">
+    <Position X="126.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>contador\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.contador.doGetAll" Collapsed="true">
+    <Position X="340.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>contador\doGetAll.cs</FileName>
+      <HashCode>AAEABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.contador.doUpdate" Collapsed="true">
+    <Position X="140.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>contador\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.descuento.doAdd" Collapsed="true">
+    <Position X="142.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>descuento\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.descuento.doDelete" Collapsed="true">
+    <Position X="147" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>descuento\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.descuento.doGet" Collapsed="true">
+    <Position X="25.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>descuento\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.descuento.doGetAll" Collapsed="true">
+    <Position X="169.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>descuento\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.descuento.doUpdate" Collapsed="true">
+    <Position X="43.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>descuento\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.documento.doAdd" Collapsed="true">
+    <Position X="453" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>documento\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.documento.doDelete" Collapsed="true">
+    <Position X="457.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>documento\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.documento.doGet" Collapsed="true">
+    <Position X="462" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>documento\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.documento.doGetAll" Collapsed="true">
+    <Position X="468.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>documento\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.documento.doUpdate" Collapsed="true">
+    <Position X="475.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>documento\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.ejercicio.doAdd" Collapsed="true">
+    <Position X="90.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ejercicio\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.ejercicio.doDelete" Collapsed="true">
+    <Position X="97.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ejercicio\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.ejercicio.doGet" Collapsed="true">
+    <Position X="104.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ejercicio\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.ejercicio.doGetAll" Collapsed="true">
+    <Position X="304.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ejercicio\doGetAll.cs</FileName>
+      <HashCode>AAEABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.ejercicio.doUpdate" Collapsed="true">
+    <Position X="129" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ejercicio\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empleado.doAdd" Collapsed="true">
+    <Position X="439.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empleado\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empleado.doDelete" Collapsed="true">
+    <Position X="441.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empleado\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empleado.doGet" Collapsed="true">
+    <Position X="444" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empleado\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empleado.doGetAll" Collapsed="true">
+    <Position X="446.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empleado\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empleado.doGetAllPorEmpresa" Collapsed="true">
+    <Position X="432.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empleado\doGetAllPorEmpresa.cs</FileName>
+      <HashCode>AAEABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empleado.doGetAllTerapeutas" Collapsed="true">
+    <Position X="171.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empleado\doGetAllTerapeuta.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empleado.doGetByLogin" Collapsed="true">
+    <Position X="435" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empleado\doGetByLogin.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empleado.doUpdate" Collapsed="true">
+    <Position X="437.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empleado\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empleado.empleadoActionBL" Collapsed="true">
+    <Position X="439.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empleado\empleadoActionBL.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empresa.doAdd" Collapsed="true">
+    <Position X="529.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empresa\doAdd.cs</FileName>
+      <HashCode>AAEABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empresa.doDelete" Collapsed="true">
+    <Position X="531.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empresa\doDelete.cs</FileName>
+      <HashCode>AAEABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empresa.doGet" Collapsed="true">
+    <Position X="534" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empresa\doGet.cs</FileName>
+      <HashCode>AAEABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empresa.doGetAll" Collapsed="true">
+    <Position X="536.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empresa\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empresa.doUpdate" Collapsed="true">
+    <Position X="538.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empresa\doUpdate.cs</FileName>
+      <HashCode>AAEABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.empresa.empresaActionBL" Collapsed="true">
+    <Position X="534" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>empresa\empresaActionBL.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocita.doAdd" Collapsed="true">
+    <Position X="306.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocita\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocita.doDelete" Collapsed="true">
+    <Position X="322.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocita\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocita.doGet" Collapsed="true">
+    <Position X="342.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocita\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocita.doGetAll" Collapsed="true">
+    <Position X="363" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocita\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocita.doUpdate" Collapsed="true">
+    <Position X="385.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocita\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocivil.doAdd" Collapsed="true">
+    <Position X="149.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocivil\doAdd.cs</FileName>
+      <HashCode>AAAABAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocivil.doDelete" Collapsed="true">
+    <Position X="27.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocivil\doDelete.cs</FileName>
+      <HashCode>AAAABAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocivil.doGet" Collapsed="true">
+    <Position X="34.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocivil\doGet.cs</FileName>
+      <HashCode>AAAABAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocivil.doGetAll" Collapsed="true">
+    <Position X="180.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocivil\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.estadocivil.doUpdate" Collapsed="true">
+    <Position X="52.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>estadocivil\doUpdate.cs</FileName>
+      <HashCode>AAAABAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.evento.doAdd" Collapsed="true">
+    <Position X="198.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>evento\doAdd.cs</FileName>
+      <HashCode>AAQABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.evento.doDelete" Collapsed="true">
+    <Position X="214.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>evento\doDelete.cs</FileName>
+      <HashCode>AAQABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.evento.doGet" Collapsed="true">
+    <Position X="232.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>evento\doGet.cs</FileName>
+      <HashCode>AAQABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.evento.doGetAll" Collapsed="true">
+    <Position X="246" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>evento\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.evento.doGetAllPorFechaYSala" Collapsed="true">
+    <Position X="264" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>evento\doGetAllPorFechaYSala.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.evento.doUpdate" Collapsed="true">
+    <Position X="279.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>evento\doUpdate.cs</FileName>
+      <HashCode>AAQABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.extpaciente.doAdd" Collapsed="true">
+    <Position X="491.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>extpaciente\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.extpaciente.doDelete" Collapsed="true">
+    <Position X="495.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>extpaciente\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.extpaciente.doGet" Collapsed="true">
+    <Position X="498" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>extpaciente\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.extpaciente.doGetAll" Collapsed="true">
+    <Position X="500.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>extpaciente\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.extpaciente.doGetByPaciente" Collapsed="true">
+    <Position X="502.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>extpaciente\doGetByPaciente.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.extpaciente.doUpdate" Collapsed="true">
+    <Position X="504.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>extpaciente\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doAdd" Collapsed="true">
+    <Position X="430.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doAdd.cs</FileName>
+      <HashCode>gAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doAnular" Collapsed="true">
+    <Position X="419.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doAnular.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doDelete" Collapsed="true">
+    <Position X="421.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doDelete.cs</FileName>
+      <HashCode>gAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doGenerate" Collapsed="true">
+    <Position X="426" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doGenerate.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doGet" Collapsed="true">
+    <Position X="54.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doGet.cs</FileName>
+      <HashCode>gAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doGetAll" Collapsed="true">
+    <Position X="201" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doGetAllPorEmpleado" Collapsed="true">
+    <Position X="216.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doGetAllPorEmpleado.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doGetAllPorFecha" Collapsed="true">
+    <Position X="234.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doGetAllPorFecha.cs</FileName>
+      <HashCode>AAABBAAAAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doGetPorOperacion" Collapsed="true">
+    <Position X="248.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doGetPorOperacion.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.factura.doUpdate" Collapsed="true">
+    <Position X="428.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>factura\doUpdate.cs</FileName>
+      <HashCode>gAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.festivo.doAdd" Collapsed="true">
+    <Position X="282" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>festivo\doAdd.cs</FileName>
+      <HashCode>AAAABAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.festivo.doDelete" Collapsed="true">
+    <Position X="297.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>festivo\doDelete.cs</FileName>
+      <HashCode>AAAABAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.festivo.doGet" Collapsed="true">
+    <Position X="309" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>festivo\doGet.cs</FileName>
+      <HashCode>AAAABAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.festivo.doGetAll" Collapsed="true">
+    <Position X="324.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>festivo\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.festivo.doUpdate" Collapsed="true">
+    <Position X="345" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>festivo\doUpdate.cs</FileName>
+      <HashCode>AAAABAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.formapago.doAdd" Collapsed="true">
+    <Position X="365.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>formapago\doAdd.cs</FileName>
+      <HashCode>AAAABAQAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.formapago.doDelete" Collapsed="true">
+    <Position X="387.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>formapago\doDelete.cs</FileName>
+      <HashCode>AAAABAQAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.formapago.doGet" Collapsed="true">
+    <Position X="405.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>formapago\doGet.cs</FileName>
+      <HashCode>AAAABAQAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.formapago.doGetAll" Collapsed="true">
+    <Position X="156" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>formapago\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.formapago.doUpdate" Collapsed="true">
+    <Position X="174" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>formapago\doUpdate.cs</FileName>
+      <HashCode>AAAABAQAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.indicacion.doAdd" Collapsed="true">
+    <Position X="45.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>indicacion\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAABAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.indicacion.doDelete" Collapsed="true">
+    <Position X="57" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>indicacion\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAABAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.indicacion.doGet" Collapsed="true">
+    <Position X="66" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>indicacion\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAABAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.indicacion.doGetAll" Collapsed="true">
+    <Position X="219" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>indicacion\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.indicacion.doGetAllInContraIndicacion" Collapsed="true">
+    <Position X="237" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>indicacion\doGetAllInContraIndicacion.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.indicacion.doGetAllInIndicacion" Collapsed="true">
+    <Position X="250.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>indicacion\doGetAllInIndicacion.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.indicacion.doGetAllOutContraIndicacion" Collapsed="true">
+    <Position X="266.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>indicacion\doGetAllOutContraIndicacion.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.indicacion.doGetAllOutIndicacion" Collapsed="true">
+    <Position X="284.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>indicacion\doGetAllOutIndicacion.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.indicacion.doUpdate" Collapsed="true">
+    <Position X="106.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>indicacion\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAABAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.laboratorio.doAdd" Collapsed="true">
+    <Position X="311.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>laboratorio\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.laboratorio.doDelete" Collapsed="true">
+    <Position X="327" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>laboratorio\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.laboratorio.doGet" Collapsed="true">
+    <Position X="347.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>laboratorio\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.laboratorio.doGetAll" Collapsed="true">
+    <Position X="367.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>laboratorio\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.laboratorio.doUpdate" Collapsed="true">
+    <Position X="390" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>laboratorio\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doAdd" Collapsed="true">
+    <Position X="408" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doCheckIfExists" Collapsed="true">
+    <Position X="158.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doCheckIfExists.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doDelete" Collapsed="true">
+    <Position X="423.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doGenerate" Collapsed="true">
+    <Position X="183" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doGenerate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doGet" Collapsed="true">
+    <Position X="192" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doGetAll" Collapsed="true">
+    <Position X="203.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doGetAllPorFecha" Collapsed="true">
+    <Position X="221.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doGetAllPorFecha.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doGetAllPorFechas" Collapsed="true">
+    <Position X="239.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doGetAllPorFechas.cs</FileName>
+      <HashCode>AAAABAAAAAAAAACAAAAEAAAAAAAFAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doGetAllPorFechaYEmpleado" Collapsed="true">
+    <Position X="252.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doGetAllPorFechaYEmpleado.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAgAAAAEAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doGetAllPorPaciente" Collapsed="true">
+    <Position X="268.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doGetAllPorPaciente.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAEEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doGetAllPorTipo" Collapsed="true">
+    <Position X="286.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doGetAllPorTipo.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doGetAllResumen" Collapsed="true">
+    <Position X="300" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doGetAllResumen.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAAAgAAEAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.operacion.doUpdate" Collapsed="true">
+    <Position X="313.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>operacion\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.paciente.doAdd" Collapsed="true">
+    <Position X="329.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>paciente\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.paciente.doDelete" Collapsed="true">
+    <Position X="349.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>paciente\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.paciente.doGet" Collapsed="true">
+    <Position X="369.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>paciente\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.paciente.doGetAll" Collapsed="true">
+    <Position X="392.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>paciente\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.paciente.doUpdate" Collapsed="true">
+    <Position X="410.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>paciente\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.paciente.doUpdateMuyImportante" Collapsed="true">
+    <Position X="160.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>paciente\doUpdateMuyImportante.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.pago.doAdd" Collapsed="true">
+    <Position X="36.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>pago\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.pago.doDelete" Collapsed="true">
+    <Position X="48" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>pago\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.pago.doGet" Collapsed="true">
+    <Position X="59.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>pago\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.pago.doGetAll" Collapsed="true">
+    <Position X="205.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>pago\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.pago.doGetAllPorFecha" Collapsed="true">
+    <Position X="223.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>pago\doGetAllPorFecha.cs</FileName>
+      <HashCode>AAABBAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.pago.doGetAllPorOperacion" Collapsed="true">
+    <Position X="241.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>pago\doGetAllPorOperacion.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.pago.doUpdate" Collapsed="true">
+    <Position X="86.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>pago\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.producto.doAdd" Collapsed="true">
+    <Position X="270.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>producto\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.producto.doDelete" Collapsed="true">
+    <Position X="288.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>producto\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.producto.doGet" Collapsed="true">
+    <Position X="302.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>producto\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.producto.doGetAll" Collapsed="true">
+    <Position X="315.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>producto\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAABAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.producto.doUpdate" Collapsed="true">
+    <Position X="331.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>producto\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.productodetalle.doAdd" Collapsed="true">
+    <Position X="351.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>productodetalle\doAdd.cs</FileName>
+      <HashCode>AAAABAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.productodetalle.doDelete" Collapsed="true">
+    <Position X="372" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>productodetalle\doDelete.cs</FileName>
+      <HashCode>AAAABAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.productodetalle.doGet" Collapsed="true">
+    <Position X="394.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>productodetalle\doGet.cs</FileName>
+      <HashCode>AAAABAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.productodetalle.doGetAll" Collapsed="true">
+    <Position X="412.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>productodetalle\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.productodetalle.doUpdate" Collapsed="true">
+    <Position X="162.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>productodetalle\doUpdate.cs</FileName>
+      <HashCode>AAAABAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.receta.doAdd" Collapsed="true">
+    <Position X="448.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>receta\doAdd.cs</FileName>
+      <HashCode>AEAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.receta.doDelete" Collapsed="true">
+    <Position X="450.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>receta\doDelete.cs</FileName>
+      <HashCode>AEAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.receta.doGet" Collapsed="true">
+    <Position X="455.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>receta\doGet.cs</FileName>
+      <HashCode>AEAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.receta.doGetAll" Collapsed="true">
+    <Position X="459.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>receta\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.receta.doUpdate" Collapsed="true">
+    <Position X="464.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>receta\doUpdate.cs</FileName>
+      <HashCode>AEAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.recetadetalle.doAdd" Collapsed="true">
+    <Position X="471" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>recetadetalle\doAdd.cs</FileName>
+      <HashCode>AAAABEAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.recetadetalle.doDelete" Collapsed="true">
+    <Position X="477.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>recetadetalle\doDelete.cs</FileName>
+      <HashCode>AAAABEAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.recetadetalle.doGet" Collapsed="true">
+    <Position X="482.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>recetadetalle\doGet.cs</FileName>
+      <HashCode>AAAABEAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.recetadetalle.doGetAll" Collapsed="true">
+    <Position X="486.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>recetadetalle\doGetAll.cs</FileName>
+      <HashCode>AEAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.recetadetalle.doUpdate" Collapsed="true">
+    <Position X="493.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>recetadetalle\doUpdate.cs</FileName>
+      <HashCode>AAAABEAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sala.doAdd" Collapsed="true">
+    <Position X="120" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sala\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sala.doDelete" Collapsed="true">
+    <Position X="131.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sala\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sala.doGet" Collapsed="true">
+    <Position X="135.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sala\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sala.doGetAll" Collapsed="true">
+    <Position X="374.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sala\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sala.doUpdate" Collapsed="true">
+    <Position X="144.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sala\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sintoma.doAdd" Collapsed="true">
+    <Position X="151.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sintoma\doAdd.cs</FileName>
+      <HashCode>AAAABAABAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sintoma.doDelete" Collapsed="true">
+    <Position X="30" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sintoma\doDelete.cs</FileName>
+      <HashCode>AAAABAABAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sintoma.doGet" Collapsed="true">
+    <Position X="39" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sintoma\doGet.cs</FileName>
+      <HashCode>AAAABAABAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sintoma.doGetAll" Collapsed="true">
+    <Position X="185.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sintoma\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.sintoma.doUpdate" Collapsed="true">
+    <Position X="61.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>sintoma\doUpdate.cs</FileName>
+      <HashCode>AAAABAABAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.subcuenta.doAdd" Collapsed="true">
+    <Position X="68.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>subcuenta\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.subcuenta.doDelete" Collapsed="true">
+    <Position X="72.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>subcuenta\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.subcuenta.doGet" Collapsed="true">
+    <Position X="77.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>subcuenta\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.subcuenta.doGetAll" Collapsed="true">
+    <Position X="255" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>subcuenta\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.subcuenta.doGetAllByLista" Collapsed="true">
+    <Position X="273" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>subcuenta\doGetAllByLista.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.subcuenta.doGetAllByTipo" Collapsed="true">
+    <Position X="291" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>subcuenta\doGetAllByTipo.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAUAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.subcuenta.doUpdate" Collapsed="true">
+    <Position X="108.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>subcuenta\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tarifa.doAdd" Collapsed="true">
+    <Position X="318" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tarifa\doAdd.cs</FileName>
+      <HashCode>AAAABAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tarifa.doDelete" Collapsed="true">
+    <Position X="333.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tarifa\doDelete.cs</FileName>
+      <HashCode>AAAABAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tarifa.doGet" Collapsed="true">
+    <Position X="354" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tarifa\doGet.cs</FileName>
+      <HashCode>AAAABAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tarifa.doGetAll" Collapsed="true">
+    <Position X="376.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tarifa\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tarifa.doUpdate" Collapsed="true">
+    <Position X="396.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tarifa\doUpdate.cs</FileName>
+      <HashCode>AAAABAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.terapia.doAdd" Collapsed="true">
+    <Position X="414.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>terapia\doAdd.cs</FileName>
+      <HashCode>AAAABAAAQAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.terapia.doDelete" Collapsed="true">
+    <Position X="165" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>terapia\doDelete.cs</FileName>
+      <HashCode>AAAABAAAQAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.terapia.doGet" Collapsed="true">
+    <Position X="176.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>terapia\doGet.cs</FileName>
+      <HashCode>AAAABAAAQAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.terapia.doGetAll" Collapsed="true">
+    <Position X="187.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>terapia\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.terapia.doGetAllIn" Collapsed="true">
+    <Position X="194.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>terapia\doGetAllIn.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.terapia.doGetAllOut" Collapsed="true">
+    <Position X="207.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>terapia\doGetAllOut.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.terapia.doUpdate" Collapsed="true">
+    <Position X="225.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>terapia\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAQAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipodocumento.doAdd" Collapsed="true">
+    <Position X="79.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipodocumento\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipodocumento.doDelete" Collapsed="true">
+    <Position X="88.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipodocumento\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipodocumento.doGet" Collapsed="true">
+    <Position X="93" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipodocumento\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipodocumento.doGetAll" Collapsed="true">
+    <Position X="293.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipodocumento\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipodocumento.doUpdate" Collapsed="true">
+    <Position X="111" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipodocumento\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipofestivo.doAdd" Collapsed="true">
+    <Position X="320.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipofestivo\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipofestivo.doDelete" Collapsed="true">
+    <Position X="336" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipofestivo\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipofestivo.doGet" Collapsed="true">
+    <Position X="356.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipofestivo\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipofestivo.doGetAll" Collapsed="true">
+    <Position X="378.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipofestivo\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipofestivo.doUpdate" Collapsed="true">
+    <Position X="399" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipofestivo\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipooperacion.doAdd" Collapsed="true">
+    <Position X="417" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipooperacion\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipooperacion.doDelete" Collapsed="true">
+    <Position X="167.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipooperacion\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipooperacion.doGet" Collapsed="true">
+    <Position X="178.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipooperacion\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipooperacion.doGetAll" Collapsed="true">
+    <Position X="189.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipooperacion\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipooperacion.doUpdate" Collapsed="true">
+    <Position X="196.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipooperacion\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tiposintoma.doAdd" Collapsed="true">
+    <Position X="70.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tiposintoma\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tiposintoma.doDelete" Collapsed="true">
+    <Position X="75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tiposintoma\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tiposintoma.doGet" Collapsed="true">
+    <Position X="81.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tiposintoma\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tiposintoma.doGetAll" Collapsed="true">
+    <Position X="257.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tiposintoma\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tiposintoma.doUpdate" Collapsed="true">
+    <Position X="95.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tiposintoma\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipounidad.doAdd" Collapsed="true">
+    <Position X="99.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipounidad\doAdd.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipounidad.doDelete" Collapsed="true">
+    <Position X="113.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipounidad\doDelete.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipounidad.doGet" Collapsed="true">
+    <Position X="122.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipounidad\doGet.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipounidad.doGetAll" Collapsed="true">
+    <Position X="338.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipounidad\doGetAll.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gesClinica.lib.bl.tipounidad.doUpdate" Collapsed="true">
+    <Position X="138" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>tipounidad\doUpdate.cs</FileName>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="gesClinica.lib.bl._common.custom.tFACTURA" Collapsed="true">
+    <Position X="541" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_common\custom\tFACTURA.cs</FileName>
+      <HashCode>QAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="gesClinica.lib.bl._common.custom.tSUBCUENTA" Collapsed="true">
+    <Position X="542.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>_common\custom\tSUBCUENTA.cs</FileName>
+      <HashCode>CAIAAAAAAAABEAAAgYAAAIACCAAAEQQABEgAAAAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

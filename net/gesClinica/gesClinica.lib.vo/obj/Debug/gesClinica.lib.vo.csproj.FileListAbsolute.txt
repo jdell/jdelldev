@@ -1,0 +1,35 @@
+C:\Documents and Settings\user\Desktop\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.dll
+C:\Documents and Settings\user\Desktop\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.pdb
+C:\Documents and Settings\user\Desktop\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.dll
+C:\Documents and Settings\user\Desktop\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.pdb
+C:\Documents and Settings\user\Desktop\dev\gesClinica\gesClinica.lib.vo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\user\Desktop\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.dll
+C:\Documents and Settings\user\Desktop\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.pdb
+C:\Documents and Settings\Administrador\Escritorio\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.dll
+C:\Documents and Settings\Administrador\Escritorio\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.pdb
+C:\Documents and Settings\Administrador\Escritorio\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.dll
+C:\Documents and Settings\Administrador\Escritorio\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.pdb
+C:\Documents and Settings\Administrador\Escritorio\dev\gesClinica\gesClinica.lib.vo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.dll
+C:\Documents and Settings\Administrador\Escritorio\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.pdb
+C:\Documents and Settings\Administrator\Desktop\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.dll
+C:\Documents and Settings\Administrator\Desktop\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.pdb
+C:\Documents and Settings\Administrator\Desktop\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.dll
+C:\Documents and Settings\Administrator\Desktop\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.pdb
+C:\Documents and Settings\Administrator\Desktop\dev\gesClinica\gesClinica.lib.vo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.dll
+C:\Documents and Settings\Administrator\Desktop\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.pdb
+D:\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.dll
+D:\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.pdb
+D:\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.dll
+D:\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.pdb
+D:\dev\gesClinica\gesClinica.lib.vo\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.dll
+D:\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.pdb
+F:\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.dll
+F:\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.vo.pdb
+F:\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.dll
+F:\dev\gesClinica\gesClinica.lib.vo\bin\Debug\gesClinica.lib.common.pdb
+F:\dev\gesClinica\gesClinica.lib.vo\obj\Debug\ResolveAssemblyReference.cache
+F:\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.dll
+F:\dev\gesClinica\gesClinica.lib.vo\obj\Debug\gesClinica.lib.vo.pdb

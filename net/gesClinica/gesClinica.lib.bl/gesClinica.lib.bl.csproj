@@ -1,0 +1,563 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26CD0944-60E2-4878-A179-2B3E5F558ADD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gesClinica.lib.bl</RootNamespace>
+    <AssemblyName>gesClinica.lib.bl</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="framework.exceptions, Version=0.0.8.0, Culture=neutral, PublicKeyToken=d0dfd29390566188, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="framework.util, Version=0.0.8.0, Culture=neutral, PublicKeyToken=43ecb7b0d9a31afb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\framework.util.dll</HintPath>
+    </Reference>
+    <Reference Include="libgc_util, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dll\libgc_util.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="apunte\doGetAllByLista.cs" />
+    <Compile Include="apunte\doGetAllByEjercicioFechas.cs" />
+    <Compile Include="apunte\doGetAllMovimientos.cs" />
+    <Compile Include="apunte\doGetAllAmortizaciones.cs" />
+    <Compile Include="apunte\doGetAllFacturas.cs" />
+    <Compile Include="asiento\doRenumerar.cs" />
+    <Compile Include="cita\doGetAllPorPacienteYTerapeuta.cs" />
+    <Compile Include="cita\doGetAllPorFechaYNoFacturada.cs" />
+    <Compile Include="cita\doGetAllPorFechaYPaciente.cs" />
+    <Compile Include="cita\doGetAllPorPaciente.cs" />
+    <Compile Include="cita\doAddProgramada.cs" />
+    <Compile Include="cita\doUpdateNotas.cs" />
+    <Compile Include="cita\doUpdateDatosClinicos.cs" />
+    <Compile Include="cita\doGetAllPorFechaYSala.cs" />
+    <Compile Include="cita\doAdd.cs" />
+    <Compile Include="cita\doDelete.cs" />
+    <Compile Include="cita\doGet.cs" />
+    <Compile Include="cita\doGetAll.cs" />
+    <Compile Include="cita\doUpdate.cs" />
+    <Compile Include="cita\citaActionBL.cs" />
+    <Compile Include="componente\doAdd.cs" />
+    <Compile Include="componente\doDelete.cs" />
+    <Compile Include="componente\doGet.cs" />
+    <Compile Include="componente\doGetAll.cs" />
+    <Compile Include="componente\doUpdate.cs" />
+    <Compile Include="anexo\doAdd.cs" />
+    <Compile Include="anexo\doDelete.cs" />
+    <Compile Include="anexo\doGet.cs" />
+    <Compile Include="anexo\doGetAll.cs" />
+    <Compile Include="anexo\doUpdate.cs" />
+    <Compile Include="asiento\doAdd.cs" />
+    <Compile Include="asiento\doDelete.cs" />
+    <Compile Include="asiento\doGet.cs" />
+    <Compile Include="asiento\doGetAll.cs" />
+    <Compile Include="asiento\doUpdate.cs" />
+    <Compile Include="apunte\doAdd.cs" />
+    <Compile Include="apunte\doDelete.cs" />
+    <Compile Include="apunte\doGet.cs" />
+    <Compile Include="apunte\doGetAll.cs" />
+    <Compile Include="apunte\doUpdate.cs" />
+    <Compile Include="asiento\doGetAllByEjercicio.cs" />
+    <Compile Include="configuracion\doGetConfiguracionContabilidad.cs" />
+    <Compile Include="configuracion\doSaveConfiguracionContabilidad.cs" />
+    <Compile Include="configuracion\doGetConfiguracionPago.cs" />
+    <Compile Include="configuracion\doSaveConfiguracionPago.cs" />
+    <Compile Include="configuracion\doGetConfiguracionSala.cs" />
+    <Compile Include="configuracion\doSaveConfiguracionSala.cs" />
+    <Compile Include="configuracion\doGetConfiguracionCita.cs" />
+    <Compile Include="configuracion\doSaveConfiguracionCita.cs" />
+    <Compile Include="contador\doAdd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\doDelete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\doGet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\doGetAll.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contador\doUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="configuracion\doAdd.cs" />
+    <Compile Include="configuracion\doDelete.cs" />
+    <Compile Include="configuracion\doGet.cs" />
+    <Compile Include="configuracion\doGetAll.cs" />
+    <Compile Include="configuracion\doUpdate.cs" />
+    <Compile Include="evento\doGetAllPorFecha.cs" />
+    <Compile Include="factura\doDesContabilizar.cs" />
+    <Compile Include="paciente\doGetAviones.cs" />
+    <Compile Include="paciente\doUpdateNotas.cs" />
+    <Compile Include="terapia\doGetDependiente.cs" />
+    <Compile Include="terapia\doUnBind.cs" />
+    <Compile Include="terapia\doBind.cs" />
+    <Compile Include="terapia\doUpdateTipoTerapia.cs" />
+    <Compile Include="tipoterapia\doAdd.cs" />
+    <Compile Include="tipoterapia\doDelete.cs" />
+    <Compile Include="tipoterapia\doGet.cs" />
+    <Compile Include="tipoterapia\doGetAll.cs" />
+    <Compile Include="tipoterapia\doUpdate.cs" />
+    <Compile Include="estadoevento\doAdd.cs" />
+    <Compile Include="estadoevento\doDelete.cs" />
+    <Compile Include="estadoevento\doGet.cs" />
+    <Compile Include="estadoevento\doGetAll.cs" />
+    <Compile Include="estadoevento\doUpdate.cs" />
+    <Compile Include="ejercicio\doCerrarYAbrir.cs" />
+    <Compile Include="ejercicio\doAbrir.cs" />
+    <Compile Include="ejercicio\doCerrar.cs" />
+    <Compile Include="tercero\doGetBySubCuenta.cs" />
+    <Compile Include="tercero\doAdd.cs" />
+    <Compile Include="tercero\doDelete.cs" />
+    <Compile Include="tercero\doGet.cs" />
+    <Compile Include="tercero\doGetAll.cs" />
+    <Compile Include="tercero\doUpdate.cs" />
+    <Compile Include="empleado\doGetAllPorEmpresa.cs" />
+    <Compile Include="factura\doGetAllForPrint.cs" />
+    <Compile Include="factura\doContabilizar.cs" />
+    <Compile Include="operacion\doGetPorCita.cs" />
+    <Compile Include="operacion\doGetResumenPorTerapeuta.cs" />
+    <Compile Include="operacion\doGetAllPorFechaYRazonSocial.cs" />
+    <Compile Include="operacion\doUpdateImporte.cs" />
+    <Compile Include="operacion\doGetAllPorFechas.cs" />
+    <Compile Include="tipounidad\doAdd.cs" />
+    <Compile Include="tipounidad\doDelete.cs" />
+    <Compile Include="tipounidad\doGet.cs" />
+    <Compile Include="tipounidad\doGetAll.cs" />
+    <Compile Include="tipounidad\doUpdate.cs" />
+    <Compile Include="formapago\doAdd.cs" />
+    <Compile Include="formapago\doDelete.cs" />
+    <Compile Include="formapago\doGet.cs" />
+    <Compile Include="formapago\doGetAll.cs" />
+    <Compile Include="formapago\doUpdate.cs" />
+    <Compile Include="operacion\doGetAllPorPaciente.cs" />
+    <Compile Include="paciente\doUpdateMuyImportante.cs" />
+    <Compile Include="pago\doGetAllPorFecha.cs" />
+    <Compile Include="pago\doGetAllPorOperacion.cs" />
+    <Compile Include="pago\doAdd.cs" />
+    <Compile Include="pago\doDelete.cs" />
+    <Compile Include="pago\doGet.cs" />
+    <Compile Include="pago\doGetAll.cs" />
+    <Compile Include="pago\doUpdate.cs" />
+    <Compile Include="ejercicio\doAdd.cs" />
+    <Compile Include="ejercicio\doDelete.cs" />
+    <Compile Include="ejercicio\doGet.cs" />
+    <Compile Include="ejercicio\doGetAll.cs" />
+    <Compile Include="ejercicio\doUpdate.cs" />
+    <Compile Include="empresa\doAdd.cs" />
+    <Compile Include="empresa\doDelete.cs" />
+    <Compile Include="empresa\doGet.cs" />
+    <Compile Include="empresa\doGetAll.cs" />
+    <Compile Include="empresa\doUpdate.cs" />
+    <Compile Include="empresa\empresaActionBL.cs" />
+    <Compile Include="indicacion\doGetAllInContraIndicacion.cs" />
+    <Compile Include="indicacion\doGetAllOutContraIndicacion.cs" />
+    <Compile Include="indicacion\doGetAllInIndicacion.cs" />
+    <Compile Include="indicacion\doGetAllOutIndicacion.cs" />
+    <Compile Include="operacion\doGetAllPorTipo.cs" />
+    <Compile Include="subcuenta\doGetAllByTipo.cs" />
+    <Compile Include="subcuenta\doGetAllByLista.cs" />
+    <Compile Include="tipodocumento\doAdd.cs" />
+    <Compile Include="tipodocumento\doDelete.cs" />
+    <Compile Include="tipodocumento\doGet.cs" />
+    <Compile Include="tipodocumento\doGetAll.cs" />
+    <Compile Include="tipodocumento\doUpdate.cs" />
+    <Compile Include="indicacion\doAdd.cs" />
+    <Compile Include="indicacion\doDelete.cs" />
+    <Compile Include="indicacion\doGet.cs" />
+    <Compile Include="indicacion\doGetAll.cs" />
+    <Compile Include="indicacion\doUpdate.cs" />
+    <Compile Include="subcuenta\doAdd.cs" />
+    <Compile Include="subcuenta\doDelete.cs" />
+    <Compile Include="subcuenta\doGet.cs" />
+    <Compile Include="subcuenta\doGetAll.cs" />
+    <Compile Include="subcuenta\doUpdate.cs" />
+    <Compile Include="factura\doAnular.cs" />
+    <Compile Include="factura\doGetAllPorFecha.cs" />
+    <Compile Include="factura\doGetPorOperacion.cs" />
+    <Compile Include="factura\doGetAllPorEmpleado.cs" />
+    <Compile Include="factura\doGenerate.cs" />
+    <Compile Include="factura\doAdd.cs" />
+    <Compile Include="factura\doDelete.cs" />
+    <Compile Include="factura\doGet.cs" />
+    <Compile Include="factura\doGetAll.cs" />
+    <Compile Include="factura\doUpdate.cs" />
+    <Compile Include="operacion\doGetAllPorFechaYEmpleado.cs" />
+    <Compile Include="operacion\doGetAllResumen.cs" />
+    <Compile Include="operacion\doGenerate.cs" />
+    <Compile Include="operacion\doCheckIfExists.cs" />
+    <Compile Include="operacion\doGetAllPorFecha.cs" />
+    <Compile Include="operacion\doAdd.cs" />
+    <Compile Include="operacion\doDelete.cs" />
+    <Compile Include="operacion\doGet.cs" />
+    <Compile Include="operacion\doGetAll.cs" />
+    <Compile Include="operacion\doUpdate.cs" />
+    <Compile Include="tipooperacion\doAdd.cs" />
+    <Compile Include="tipooperacion\doDelete.cs" />
+    <Compile Include="tipooperacion\doGet.cs" />
+    <Compile Include="tipooperacion\doGetAll.cs" />
+    <Compile Include="tipooperacion\doUpdate.cs" />
+    <Compile Include="descuento\doAdd.cs" />
+    <Compile Include="descuento\doDelete.cs" />
+    <Compile Include="descuento\doGet.cs" />
+    <Compile Include="descuento\doGetAll.cs" />
+    <Compile Include="descuento\doUpdate.cs" />
+    <Compile Include="tiposintoma\doAdd.cs" />
+    <Compile Include="tiposintoma\doDelete.cs" />
+    <Compile Include="tiposintoma\doGet.cs" />
+    <Compile Include="tiposintoma\doGetAll.cs" />
+    <Compile Include="tiposintoma\doUpdate.cs" />
+    <Compile Include="sintoma\doAdd.cs" />
+    <Compile Include="sintoma\doDelete.cs" />
+    <Compile Include="sintoma\doGet.cs" />
+    <Compile Include="sintoma\doGetAll.cs" />
+    <Compile Include="sintoma\doUpdate.cs" />
+    <Compile Include="documento\doAdd.cs" />
+    <Compile Include="documento\doDelete.cs" />
+    <Compile Include="documento\doGet.cs" />
+    <Compile Include="documento\doGetAll.cs" />
+    <Compile Include="documento\doUpdate.cs" />
+    <Compile Include="evento\doGetAllPorFechaYSala.cs" />
+    <Compile Include="festivo\doAdd.cs" />
+    <Compile Include="festivo\doDelete.cs" />
+    <Compile Include="festivo\doGet.cs" />
+    <Compile Include="festivo\doGetAll.cs" />
+    <Compile Include="festivo\doUpdate.cs" />
+    <Compile Include="terapia\doGetAllOut.cs" />
+    <Compile Include="terapia\doGetAllIn.cs" />
+    <Compile Include="tipofestivo\doAdd.cs" />
+    <Compile Include="tipofestivo\doDelete.cs" />
+    <Compile Include="tipofestivo\doGet.cs" />
+    <Compile Include="tipofestivo\doGetAll.cs" />
+    <Compile Include="tipofestivo\doUpdate.cs" />
+    <Compile Include="empleado\doGetByLogin.cs" />
+    <Compile Include="empleado\empleadoActionBL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="evento\doAdd.cs" />
+    <Compile Include="evento\doDelete.cs" />
+    <Compile Include="evento\doGet.cs" />
+    <Compile Include="evento\doGetAll.cs" />
+    <Compile Include="evento\doUpdate.cs" />
+    <Compile Include="recetadetalle\doAdd.cs" />
+    <Compile Include="recetadetalle\doDelete.cs" />
+    <Compile Include="recetadetalle\doGet.cs" />
+    <Compile Include="recetadetalle\doGetAll.cs" />
+    <Compile Include="recetadetalle\doUpdate.cs" />
+    <Compile Include="receta\doAdd.cs" />
+    <Compile Include="receta\doDelete.cs" />
+    <Compile Include="receta\doGet.cs" />
+    <Compile Include="receta\doGetAll.cs" />
+    <Compile Include="receta\doUpdate.cs" />
+    <Compile Include="extpaciente\doGetByPaciente.cs" />
+    <Compile Include="extpaciente\doAdd.cs" />
+    <Compile Include="extpaciente\doDelete.cs" />
+    <Compile Include="extpaciente\doGet.cs" />
+    <Compile Include="extpaciente\doGetAll.cs" />
+    <Compile Include="extpaciente\doUpdate.cs" />
+    <Compile Include="productodetalle\doAdd.cs" />
+    <Compile Include="productodetalle\doDelete.cs" />
+    <Compile Include="productodetalle\doGet.cs" />
+    <Compile Include="productodetalle\doGetAll.cs" />
+    <Compile Include="productodetalle\doUpdate.cs" />
+    <Compile Include="producto\doAdd.cs" />
+    <Compile Include="producto\doDelete.cs" />
+    <Compile Include="producto\doGet.cs" />
+    <Compile Include="producto\doGetAll.cs" />
+    <Compile Include="producto\doUpdate.cs" />
+    <Compile Include="laboratorio\doAdd.cs" />
+    <Compile Include="laboratorio\doDelete.cs" />
+    <Compile Include="laboratorio\doGet.cs" />
+    <Compile Include="laboratorio\doGetAll.cs" />
+    <Compile Include="laboratorio\doUpdate.cs" />
+    <Compile Include="empleado\doGetAllTerapeuta.cs" />
+    <Compile Include="estadocita\doAdd.cs" />
+    <Compile Include="estadocita\doDelete.cs" />
+    <Compile Include="estadocita\doGet.cs" />
+    <Compile Include="estadocita\doGetAll.cs" />
+    <Compile Include="estadocita\doUpdate.cs" />
+    <Compile Include="paciente\doAdd.cs" />
+    <Compile Include="paciente\doDelete.cs" />
+    <Compile Include="paciente\doGet.cs" />
+    <Compile Include="paciente\doGetAll.cs" />
+    <Compile Include="paciente\doUpdate.cs" />
+    <Compile Include="empleado\doAdd.cs" />
+    <Compile Include="empleado\doDelete.cs" />
+    <Compile Include="empleado\doGet.cs" />
+    <Compile Include="empleado\doGetAll.cs" />
+    <Compile Include="empleado\doUpdate.cs" />
+    <Compile Include="tarifa\doAdd.cs" />
+    <Compile Include="tarifa\doDelete.cs" />
+    <Compile Include="tarifa\doGet.cs" />
+    <Compile Include="tarifa\doGetAll.cs" />
+    <Compile Include="tarifa\doUpdate.cs" />
+    <Compile Include="estadocivil\doAdd.cs" />
+    <Compile Include="estadocivil\doDelete.cs" />
+    <Compile Include="estadocivil\doGet.cs" />
+    <Compile Include="estadocivil\doGetAll.cs" />
+    <Compile Include="estadocivil\doUpdate.cs" />
+    <Compile Include="terapia\doAdd.cs" />
+    <Compile Include="terapia\doDelete.cs" />
+    <Compile Include="terapia\doGet.cs" />
+    <Compile Include="terapia\doGetAll.cs" />
+    <Compile Include="terapia\doUpdate.cs" />
+    <Compile Include="sala\doUpdate.cs" />
+    <Compile Include="sala\doDelete.cs" />
+    <Compile Include="sala\doAdd.cs" />
+    <Compile Include="sala\doGet.cs" />
+    <Compile Include="sala\doGetAll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_common\cache.cs" />
+    <Compile Include="_common\constantes\mensaje.cs" />
+    <Compile Include="_common\custom\Saldos.cs" />
+    <Compile Include="_common\custom\tNUMERABLE.cs" />
+    <Compile Include="_common\custom\tTRIMESTRE.cs" />
+    <Compile Include="_common\custom\LineaVacia.cs" />
+    <Compile Include="_common\custom\Modelo130.cs" />
+    <Compile Include="_common\custom\tFACTURA.cs" />
+    <Compile Include="_common\custom\ResumenFacturacion.cs" />
+    <Compile Include="_common\custom\tSUBCUENTA.cs" />
+    <Compile Include="_common\secciones\AdministracionSection.cs" />
+    <Compile Include="_common\secciones\SubCuentasSection.cs" />
+    <Compile Include="_common\secciones\GesClinicaConfigSection.cs" />
+    <Compile Include="_common\secciones\MantenimientoSection.cs" />
+    <Compile Include="_events\gesClinicaEventArgs.cs" />
+    <Compile Include="_events\ProgressEventArgs.cs" />
+    <Compile Include="_exceptions\asiento\AsientoDescuadradoException.cs" />
+    <Compile Include="_exceptions\cita\MissingPacienteException.cs" />
+    <Compile Include="_exceptions\cita\MissingStateException.cs" />
+    <Compile Include="_exceptions\cita\MissingRoomException.cs" />
+    <Compile Include="_exceptions\cita\MissingTerapiaException.cs" />
+    <Compile Include="_exceptions\cita\MissingEmployeeException.cs" />
+    <Compile Include="_exceptions\common\AccessNotAllowedException.cs" />
+    <Compile Include="_exceptions\common\ConfigFileNotFoundException.cs" />
+    <Compile Include="_exceptions\common\IncorrectFormatConfigFileException.cs" />
+    <Compile Include="_exceptions\common\InitializeCacheException.cs" />
+    <Compile Include="_exceptions\common\NullReferenceException.cs" />
+    <Compile Include="_exceptions\common\OutOfServiceException.cs" />
+    <Compile Include="_exceptions\componente\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\configuracion\MissingKeyException.cs" />
+    <Compile Include="_exceptions\configuracion\MissingClassException.cs" />
+    <Compile Include="_exceptions\operacion\UnableCreateOperationException.cs" />
+    <Compile Include="_exceptions\tipoterapia\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\estadoevento\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\evento\MissingStateException.cs" />
+    <Compile Include="_exceptions\tercero\MissingSubCuentaException.cs" />
+    <Compile Include="_exceptions\tercero\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\operacion\MissingFormaPagoException.cs" />
+    <Compile Include="_exceptions\evento\MissingRoomException.cs" />
+    <Compile Include="_exceptions\evento\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\evento\MissingEmployeeException.cs" />
+    <Compile Include="_exceptions\festivo\MissingTypeOfFestivoException.cs" />
+    <Compile Include="_exceptions\laboratorio\MissingNameException.cs" />
+    <Compile Include="_exceptions\producto\MissingTypeOfUnitException.cs" />
+    <Compile Include="_exceptions\producto\MissingLaboratoryException.cs" />
+    <Compile Include="_exceptions\producto\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\sintoma\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\tiposintoma\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\tipofestivo\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\tipounidad\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\indicacion\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\empleado\MissingCompanyException.cs" />
+    <Compile Include="_exceptions\empleado\MissingNameException.cs" />
+    <Compile Include="_exceptions\empresa\MissingRazonSocialException.cs" />
+    <Compile Include="_exceptions\formapago\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\tarifa\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\documento\MissingTypeOfDocumentException.cs" />
+    <Compile Include="_exceptions\tipodocumento\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\terapia\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\empleado\EmployeeNotEnabledException.cs" />
+    <Compile Include="_exceptions\empleado\EmployeeNotFoundException.cs" />
+    <Compile Include="_exceptions\estadocita\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\estadocivil\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\factura\BillScoredException.cs" />
+    <Compile Include="_exceptions\gesClinicaException.cs" />
+    <Compile Include="_exceptions\paciente\MissingTarifaException.cs" />
+    <Compile Include="_exceptions\paciente\MissingNameException.cs" />
+    <Compile Include="_exceptions\sala\MissingDescriptionException.cs" />
+    <Compile Include="_exceptions\validatingException.cs" />
+    <Compile Include="_importacion\doEraseALLTerceros.cs" />
+    <Compile Include="_importacion\doImportarParte3.cs" />
+    <Compile Include="_importacion\doImportarParte2.cs" />
+    <Compile Include="_importacion\doEraseALL.cs" />
+    <Compile Include="_importacion\doImportarParte1.cs" />
+    <Compile Include="_reports\asiento\rptAsiento.cs" />
+    <Compile Include="_reports\factura\rptFacturas.cs" />
+    <Compile Include="_reports\historiaclinica\rptHistoriaClinica1.cs" />
+    <Compile Include="_reports\quiromasaje\rptQuiromasaje4.cs" />
+    <Compile Include="_reports\quiromasaje\rptQuiromasaje3.cs" />
+    <Compile Include="_reports\quiromasaje\rptQuiromasaje2.cs" />
+    <Compile Include="_reports\quiromasaje\rptQuiromasaje1.cs" />
+    <Compile Include="_reports\resumencaja\rptResumenCaja.cs" />
+    <Compile Include="_reports\resumenfacturas\rptResumenFacturas.cs" />
+    <Compile Include="_reports\resumenfiscal\rptModelo130.cs" />
+    <Compile Include="_reports\resumenporactividad\rptResumenPorActividad.cs" />
+    <Compile Include="_reports\detallefacturacion\rptDetalleFacturacion.cs" />
+    <Compile Include="_reports\factura\rptFactura.cs" />
+    <Compile Include="_reports\Informe.cs" />
+    <Compile Include="_reports\receta\rptReceta.cs" />
+    <Compile Include="_reports\reciboterapeuta\rptReciboTerapeuta.cs" />
+    <Compile Include="_reports\resumenporterapeuta\rptResumenPorTerapeuta.cs" />
+    <Compile Include="_reports\saldo\rptSaldos.cs" />
+    <Compile Include="_template\actionBL.cs" />
+    <Compile Include="_template\administrativoActionBL.cs" />
+    <Compile Include="_template\gerenteActionBL.cs" />
+    <Compile Include="_template\generalActionBL.cs" />
+    <Compile Include="_template\terapeutaActionBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gesClinica.lib.common\gesClinica.lib.common.csproj">
+      <Project>{413D9E57-14F9-448F-8ABB-C09DE6FB0C3B}</Project>
+      <Name>gesClinica.lib.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gesClinica.lib.dao\gesClinica.lib.dao.csproj">
+      <Project>{4863D8E3-041C-47E3-BE4A-E9475411F492}</Project>
+      <Name>gesClinica.lib.dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gesClinica.lib.vo\gesClinica.lib.vo.csproj">
+      <Project>{B95F238C-8B83-41F0-9D42-87B4E063215F}</Project>
+      <Name>gesClinica.lib.vo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="_reports\asiento\rdlAsiento.rdlc" />
+    <EmbeddedResource Include="_reports\factura\rdlFacturasTAO.rdlc" />
+    <EmbeddedResource Include="_reports\quiromasaje\rdlQuiromasaje4.rdlc" />
+    <EmbeddedResource Include="_reports\resumencaja\rdlResumenCaja.rdlc" />
+    <EmbeddedResource Include="_reports\resumenfiscal\rdlModelo130.rdlc" />
+    <EmbeddedResource Include="_reports\historiaclinica\rdlHistoriaClinica1.rdlc" />
+    <EmbeddedResource Include="_reports\quiromasaje\rdlQuiromasaje3.rdlc" />
+    <EmbeddedResource Include="_reports\quiromasaje\rdlQuiromasaje2.rdlc" />
+    <EmbeddedResource Include="_reports\resumenporactividad\rdlResumenPorActividad.rdlc" />
+    <EmbeddedResource Include="_reports\detallefacturacion\rdlDetalleFacturacion.rdlc" />
+    <EmbeddedResource Include="_reports\factura\rdlFacturaGenerico.rdlc" />
+    <EmbeddedResource Include="_reports\factura\rdlFacturaTAO.rdlc" />
+    <EmbeddedResource Include="_reports\quiromasaje\rdlQuiromasaje1.rdlc" />
+    <EmbeddedResource Include="_reports\receta\rdlReceta.rdlc" />
+    <EmbeddedResource Include="_reports\reciboterapeuta\rdlReciboTerapeuta.rdlc" />
+    <EmbeddedResource Include="_reports\resumenporterapeuta\rdlResumenPorTerapeuta.rdlc" />
+    <EmbeddedResource Include="_reports\saldo\rdlSaldos.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\DataSources\gesClinica.lib.bl._common.custom.LineaVacia.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.bl._common.custom.Modelo130.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.bl._common.custom.Saldos.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.vo.Apunte.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.vo.Asiento.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.vo.Empleado.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.vo.Factura.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.vo.Operacion.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.vo.Paciente.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.vo.Pago.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.vo.Receta.datasource" />
+    <None Include="Properties\DataSources\gesClinica.lib.vo.RecetaDetalle.datasource" />
+    <EmbeddedResource Include="_reports\resumenfacturas\rdlResumenFacturas.rdlc" />
+    <None Include="_sql\upgrade_17.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_16.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_15.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_14.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_13.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_12.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_11.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_10.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_9.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_8.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_7.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_6.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_5.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_4.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_3.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_2.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\upgrade_1.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="_sql\_upgrade_example.sql">
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
