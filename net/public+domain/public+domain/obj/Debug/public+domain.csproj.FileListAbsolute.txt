@@ -1,0 +1,5 @@
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\bin\Debug\public+domain.dll
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\bin\Debug\public+domain.pdb
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\obj\Debug\public+domain.dll
+C:\Documents and Settings\Administrator.egeneralmedical\Desktop\tmp_test\public+domain\public+domain\obj\Debug\public+domain.pdb
