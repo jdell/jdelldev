@@ -1,0 +1,11 @@
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\bin\Debug\ToolToSendEmails.exe
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\bin\Debug\ToolToSendEmails.pdb
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\obj\Debug\ResolveAssemblyReference.cache
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\obj\Debug\ToolToSendEmails.Properties.Resources.resources
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\obj\Debug\ToolToSendEmails.csproj.GenerateResource.Cache
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\obj\Debug\ToolToSendEmails.exe
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\obj\Debug\ToolToSendEmails.pdb
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\obj\Debug\ToolToSendEmails.frmMain.resources
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\bin\Debug\ToolToSendEmails.exe.config
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\obj\Debug\ToolToSendEmails.csproj.ResolveComReference.cache
+\\Egm1\common area\STATIONS (Employees)\9 Programmer (Patil)\Joel\dev\ToolToSendEmails\ToolToSendEmails\bin\Debug\Design.dll

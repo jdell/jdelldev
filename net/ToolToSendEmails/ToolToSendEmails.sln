@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolToSendEmails", "ToolToSendEmails\ToolToSendEmails.csproj", "{0799E536-3E04-4AA3-B5B3-963D9312C743}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ToolToSendEmails\\ToolToSendEmails.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = ToolToSendEmails\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0799E536-3E04-4AA3-B5B3-963D9312C743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0799E536-3E04-4AA3-B5B3-963D9312C743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0799E536-3E04-4AA3-B5B3-963D9312C743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0799E536-3E04-4AA3-B5B3-963D9312C743}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
